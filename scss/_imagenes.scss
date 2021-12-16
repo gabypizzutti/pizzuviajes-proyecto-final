@@ -1,0 +1,37 @@
+// mixin
+@mixin sizes ($width, $height){
+	width: $width;
+	height: $height;
+}
+
+// todas las imagenes
+.icono {
+    width: 1em;
+}
+
+.imagen
+{
+	width: 1.5em;
+}
+
+.logo{
+	width: 3rem;
+}
+
+.provincia, .imgCar1, .imgCar2{
+	@include sizes(250px,200px )
+}
+
+.redes, .method{
+	width: 2rem;
+}
+
+.star{
+	width: 30%;
+}
+
+.iconCar{
+	width: 1em;
+}
+// fin de la imagenes 
+

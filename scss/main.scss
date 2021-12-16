@@ -1,0 +1,101 @@
+// variables
+$colorPimario: rgb(35,196,194);
+$letraPrincipal: 'Permanent Marker', cursive;
+$colorLetra: white;
+$grid:grid;
+$tituloMain: 'Zen Kurenaido', sans-serif;
+
+
+*{
+	overflow-x: hidden;
+}
+
+h5, h4, h3{
+	overflow-y: hidden;
+}
+
+// partials
+@import "grid";
+@import "imagenes";
+@import "headernav";
+@import "content";
+@import "footer";
+
+
+
+@media only screen and (min-width:0px) and (max-width:768px){
+	
+	body{
+		text-align: center;
+	}
+	
+	.col{
+		font-size: 8px;
+	}
+
+	.col-xs-12{
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+
+	.row{
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	// index
+	.provincia{
+		width: 80%;
+		max-width: 250px;
+	}
+
+	// auto
+	.carDate, .clock{
+		width: 160px;
+	}
+
+	.infoCar{
+		justify-content: center;
+	}
+
+	.atribute{
+		text-align: center;	
+	}
+
+	// page de datos del pax 
+	.datoPax{
+		text-align: start;
+	}
+
+	.typeDocument{
+		margin-left: 1rem;
+	}
+
+	// page de checkout de pagos
+	.dateTc{
+		text-align: start;
+	}
+
+	.pay{
+		padding-inline-start: 10px;
+	}
+
+	.info{
+		padding-inline-start: 5px;
+		padding-inline-end: 5px;
+	}
+
+	// page  index, checkout de pago y gracias por su compra 
+	.optionTitle, .datePay, .confirmation, .recomendation{
+		margin-left: 8px;
+		margin-right: 8px;
+	}
+}
+
+
+	
+
+
+
+
+
