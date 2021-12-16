@@ -43,7 +43,7 @@ h5, h4, h3 {
 
 .encabezado {
   width: 100%;
-  padding: 20px;
+  padding: 2em;
   text-align: left;
 }
 
@@ -118,175 +118,6 @@ nav ul li a:hover {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 200px;
-}
-
-.grid-container {
-  display: -ms-grid;
-  display: grid;
-  display: grid;
-      grid-template-areas: "barraDer barraDer barraDer barraDer" "encabezado barraNavegacion barraNavegacion barraNavegacion" "main main main main" "footer footer footer footer";
-  grid-auto-columns: 1fr;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: 0.1fr 0.1fr 0.6fr 0.2fr;
-      grid-template-rows: 0.1fr 0.1fr 0.6fr 0.2fr;
-}
-
-.grid-container .barraDer {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-area: barraDer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-column-gap: 8px;
-          column-gap: 8px;
-}
-
-.grid-container .encabezado {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: encabezado;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.grid-container .barraNavegacion {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 3;
-  grid-area: barraNavegacion;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.grid-container .mainContainer {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-area: main;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 0.5fr 1fr 0,5fr;
-      grid-template-columns: 1fr 0.5fr 1fr 0,5fr;
-  -ms-grid-rows: 0.3fr 1fr 1fr;
-      grid-template-rows: 0.3fr 1fr 1fr;
-  gap: 0px 0px;
-      grid-template-areas: "title title title title" "promo promo promo1 promo1" "promo2 promo2 promo3 promo3";
-}
-
-.grid-container .titleContenido {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-area: title;
-  padding: 20px;
-}
-
-.grid-container .promo {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: promo;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding-left: 40px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: "Zen Kurenaido", sans-serif;
-  box-sizing: border-box;
-}
-
-.grid-container .promo1 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 2;
-  grid-area: promo1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding: 20px;
-  font-family: "Zen Kurenaido", sans-serif;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.grid-container .promo2 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: promo2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding-left: 40px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-family: "Zen Kurenaido", sans-serif;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.grid-container .promo3 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 2;
-  grid-area: promo3;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding: 20px;
-  font-family: "Zen Kurenaido", sans-serif;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.grid-container .piePagina {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-area: footer;
-  text-align: center;
-  padding-top: 3em;
-  padding-bottom: 3em;
-  font-family: "Permanent Marker", cursive;
-  color: white;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 768px) {
@@ -392,20 +223,20 @@ nav ul li a:hover {
 }
 
 @media only screen and (min-width: 1024px) {
-  .grid-container {
+  .gridPadre {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "barraDer barraDer barraDer barraDer" "encabezado barraNavegacion barraNavegacion barraNavegacion" "main main main main" "footer footer footer footer";
-    -ms-grid-rows: 0.1fr 0.1fr 0.6fr 0.2fr;
-        grid-template-rows: 0.1fr 0.1fr 0.6fr 0.2fr;
+        grid-template-areas: "contacto contacto contacto contacto" "encabezado barraNavegacion barraNavegacion barraNavegacion" "main main main main" "footer footer footer footer";
+    -ms-grid-rows: 0.1fr 0.2fr 0.6fr 0.2fr;
+        grid-template-rows: 0.1fr 0.2fr 0.6fr 0.2fr;
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
   }
-  .grid-container .barraDer {
+  .gridPadre .barraDer {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
-    grid-area: barraDer;
+    grid-area: contacto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -419,7 +250,7 @@ nav ul li a:hover {
     -webkit-column-gap: 8px;
             column-gap: 8px;
   }
-  .grid-container .encabezado {
+  .gridPadre .encabezado {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: encabezado;
@@ -427,7 +258,7 @@ nav ul li a:hover {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  .grid-container .barraNavegacion {
+  .gridPadre .barraNavegacion {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     -ms-grid-column-span: 3;
@@ -443,7 +274,7 @@ nav ul li a:hover {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .grid-container .mainContainer {
+  .gridPadre .mainContainer {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
@@ -457,14 +288,14 @@ nav ul li a:hover {
     gap: 0px 0px;
         grid-template-areas: "title title title title" "promo promo promo1 promo1" "promo2 promo2 promo3 promo3";
   }
-  .grid-container .titleContenido {
+  .gridPadre .titleContenido {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
     grid-area: title;
     padding: 20px;
   }
-  .grid-container .promo {
+  .gridPadre .promo {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -484,7 +315,7 @@ nav ul li a:hover {
     font-family: "Zen Kurenaido", sans-serif;
     box-sizing: border-box;
   }
-  .grid-container .promo1 {
+  .gridPadre .promo1 {
     -ms-grid-row: 2;
     -ms-grid-column: 3;
     -ms-grid-column-span: 2;
@@ -501,7 +332,7 @@ nav ul li a:hover {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
-  .grid-container .promo2 {
+  .gridPadre .promo2 {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -520,7 +351,7 @@ nav ul li a:hover {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
-  .grid-container .promo3 {
+  .gridPadre .promo3 {
     -ms-grid-row: 3;
     -ms-grid-column: 3;
     -ms-grid-column-span: 2;
@@ -537,14 +368,14 @@ nav ul li a:hover {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
-  .grid-container .piePagina {
+  .gridPadre .piePagina {
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
     grid-area: footer;
     text-align: center;
-    padding-top: 3em;
-    padding-bottom: 3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     font-family: "Permanent Marker", cursive;
     color: white;
   }
