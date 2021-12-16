@@ -76,11 +76,14 @@ nav ul li a:hover {
 
 .socialMedia {
   margin-top: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 8px;
+}
+
+.follow {
+  text-align: center;
 }
 
 .tituloContenido {
-  padding: 5px;
   font-family: "Zen Kurenaido", sans-serif;
   text-align: center;
   font-style: italic;
@@ -92,6 +95,11 @@ nav ul li a:hover {
           box-sizing: border-box;
 }
 
+.fotoProv {
+  padding-left: 4em;
+  overflow-y: hidden;
+}
+
 .textoPromo, .textoPromo2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -99,8 +107,7 @@ nav ul li a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-left: 10px;
-  padding-top: 10px;
+  padding: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 200px;
@@ -179,7 +186,7 @@ nav ul li a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-left: 17px;
+    padding-left: 8px;
   }
   .promo1 {
     -ms-grid-row: 3;
@@ -198,7 +205,7 @@ nav ul li a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-left: 17px;
+    padding-left: 8px;
   }
   .promo3 {
     -ms-grid-row: 5;
@@ -227,8 +234,8 @@ nav ul li a:hover {
     display: -ms-grid;
     display: grid;
         grid-template-areas: "contacto contacto contacto contacto" "encabezado barraNavegacion barraNavegacion barraNavegacion" "main main main main" "footer footer footer footer";
-    -ms-grid-rows: 0.1fr 0.2fr 0.6fr 0.2fr;
-        grid-template-rows: 0.1fr 0.2fr 0.6fr 0.2fr;
+    -ms-grid-rows: 0.1fr 0.2fr 0.9fr 0.2fr;
+        grid-template-rows: 0.1fr 0.2fr 0.9fr 0.2fr;
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
   }
@@ -288,7 +295,7 @@ nav ul li a:hover {
     gap: 0px 0px;
         grid-template-areas: "title title title title" "promo promo promo1 promo1" "promo2 promo2 promo3 promo3";
   }
-  .gridPadre .titleContenido {
+  .gridPadre .tituloContenido {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
@@ -307,9 +314,9 @@ nav ul li a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding-left: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-left: 5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     font-family: "Zen Kurenaido", sans-serif;
@@ -344,9 +351,9 @@ nav ul li a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding-left: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-left: 5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     font-family: "Zen Kurenaido", sans-serif;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -374,8 +381,8 @@ nav ul li a:hover {
     -ms-grid-column-span: 4;
     grid-area: footer;
     text-align: center;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 6px;
+    padding-bottom: 6px;
     font-family: "Permanent Marker", cursive;
     color: white;
   }
