@@ -24,19 +24,24 @@ h5, h4, h3 {
   font-size: 20px;
   font-weight: bold;
   color: white;
-  text-decoration: none;
   overflow-y: hidden;
 }
 
+header a {
+  text-decoration: none;
+}
+
 #imagenMarca {
+  margin-left: 3em;
+}
+
+.marcaLogo {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
 .encabezado, .barraNavegacion, .piePagina {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   background: #23c4c2;
   overflow-y: hidden;
 }
@@ -81,6 +86,7 @@ nav ul li a:hover {
 
 .follow {
   text-align: center;
+  padding-bottom: 10px;
 }
 
 .tituloContenido {
@@ -98,6 +104,14 @@ nav ul li a:hover {
 .fotoProv {
   padding-left: 4em;
   overflow-y: hidden;
+}
+
+.prov1 {
+  padding-bottom: 2em;
+}
+
+.parrafo {
+  padding-top: 10px;
 }
 
 .textoPromo, .textoPromo2 {
@@ -128,7 +142,6 @@ nav ul li a:hover {
 }
 
 @media only screen and (min-width: 0px) and (max-width: 768px) {
-  /* index */
   .gridPadre {
     display: -ms-grid;
     display: grid;
@@ -146,6 +159,8 @@ nav ul li a:hover {
     font-size: 12px;
   }
   header {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: botonIndex;
     width: auto;
     line-height: normal;
@@ -155,6 +170,8 @@ nav ul li a:hover {
     width: 30px;
   }
   nav {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
     grid-area: nav;
   }
   .mainContainer {
@@ -163,10 +180,8 @@ nav ul li a:hover {
     grid-area: main;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 0.1fr 0,5fr 0,5fr 0,5fr 0,5fr;
-        grid-template-rows: 0.1fr 0,5fr 0,5fr 0,5fr 0,5fr;
+        grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr;
     gap: 0px 0px;
         grid-template-areas: "title " "promo"  "promo1" "promo2" "promo3";
   }
@@ -226,7 +241,57 @@ nav ul li a:hover {
     color: white;
     height: 70px;
   }
-  /* fin index */
+  .gridPaquetes {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-columns: 1fr;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 0.1fr 0.1fr 0,1fr 0,5fr 0.2fr;
+        grid-template-rows: 0.1fr 0.1fr 0,1fr 0,5fr 0.2fr;
+        grid-template-areas: "contacto" "botonIndex"  "nav" "main" "footer";
+  }
+  .contacto {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: contacto;
+    font-size: 12px;
+  }
+  header {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: botonIndex;
+    width: auto;
+    line-height: normal;
+    padding: 0px;
+  }
+  nav {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: nav;
+  }
+  main {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: main;
+  }
+  .eleccionTramo {
+    padding-left: 0px;
+  }
+  .calafate, .cataratas {
+    padding-left: 0px;
+  }
+  footer {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: footer;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Permanent Marker', cursive;
+    /*letra extraida de google fonts*/
+    color: white;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -234,8 +299,8 @@ nav ul li a:hover {
     display: -ms-grid;
     display: grid;
         grid-template-areas: "contacto contacto contacto contacto" "encabezado barraNavegacion barraNavegacion barraNavegacion" "main main main main" "footer footer footer footer";
-    -ms-grid-rows: 0.1fr 0.2fr 0.9fr 0.2fr;
-        grid-template-rows: 0.1fr 0.2fr 0.9fr 0.2fr;
+    -ms-grid-rows: 20px 0.2fr 0.9fr 0.1fr;
+        grid-template-rows: 20px 0.2fr 0.9fr 0.1fr;
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
   }
@@ -288,9 +353,7 @@ nav ul li a:hover {
     grid-area: main;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 0.5fr 1fr 0.5fr;
-        grid-template-columns: 1fr 0.5fr 1fr 0.5fr;
-    -ms-grid-rows: 0.3fr 1fr 1fr;
+        grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
         grid-template-rows: 0.3fr 1fr 1fr;
     gap: 0px 0px;
         grid-template-areas: "title title title title" "promo promo promo1 promo1" "promo2 promo2 promo3 promo3";
@@ -384,6 +447,148 @@ nav ul li a:hover {
     padding-top: 6px;
     padding-bottom: 6px;
     font-family: "Permanent Marker", cursive;
+    color: white;
+  }
+  .gridPaquete {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-columns: 1fr;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: 30px 112px 600px 75px;
+        grid-template-rows: 30px 112px 600px 75px;
+        grid-template-areas: "contacto contacto contacto contacto" "header nav nav nav" "main main main main" "footer footer footer footer";
+  }
+  .contacto {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: contacto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-column-gap: 8px;
+            column-gap: 8px;
+  }
+  header {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: header;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 3;
+    grid-area: nav;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mainPaquete {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: main;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+    -ms-grid-rows: 0.1fr 0.3fr 0.3fr;
+        grid-template-rows: 0.1fr 0.3fr 0.3fr;
+    gap: 0px 0px;
+        grid-template-areas: "title title title title" "promo promo promo1 promo1" "promo2 promo2 promo3 promo3";
+  }
+  .titleFirst {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: title;
+    padding: 20px;
+  }
+  .promo {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: promo;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .promo1 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-area: promo1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 20px;
+  }
+  .promo2 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: promo2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .promo3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-area: promo3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 20px;
+  }
+  footer {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: footer;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Permanent Marker', cursive;
+    /*letra extraida de google fonts*/
     color: white;
   }
 }
