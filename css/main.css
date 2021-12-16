@@ -59,6 +59,10 @@ nav {
   font-family: "Permanent Marker", cursive;
 }
 
+nav li {
+  float: left;
+}
+
 nav ul li {
   display: inline-block;
   padding-left: 10px;

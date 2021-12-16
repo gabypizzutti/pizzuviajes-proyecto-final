@@ -57,6 +57,10 @@ nav {
 	font-family: $letraPrincipal;
 } 
 
+nav li {
+    float: left;
+}
+
 nav ul li{ 
 	display: inline-block;
 	padding-left: 10px; 
@@ -266,7 +270,8 @@ nav ul li a:hover {
 }
 
 @media only screen and (min-width: 1024px){
-	.gridPadre{
+	// index
+    .gridPadre{
 		display: $grid;
 		grid-template-areas:
         "contacto contacto contacto contacto"
@@ -391,7 +396,6 @@ nav ul li a:hover {
 	.barraNavegacion{
 		grid-area: barraNavegacion;
 		display: flex;
-		// padding-right: 30px;
 		justify-content: center;
         flex-direction: row;
 	}
