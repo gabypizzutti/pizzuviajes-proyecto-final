@@ -1,0 +1,40 @@
+.item{
+    text-align: right;
+}
+
+.nombreLogo{
+	font-family: $letraPrincipal;
+	font-size: 20px;
+	font-weight: bold ; 
+	color:$colorLetra;
+	text-decoration: none;
+	overflow-y: hidden;
+}
+
+.navbar-expand-lg{
+    background-color: $colorPimario;
+}
+
+#navbarNav{
+    justify-content: center;
+}
+
+nav {
+	list-style-type: none;
+	font-family: $letraPrincipal;
+	ul {
+		li {
+			letter-spacing: 1px;
+			text-decoration: none;
+			list-style-type: none;
+			box-sizing: border-box;
+			a {
+				text-decoration: none;
+				color: white;
+				&:hover {
+					color: #0771db;
+				}
+			}
+		}
+	}
+}
