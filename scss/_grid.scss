@@ -8,7 +8,7 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
 *{
 	margin:0;
 	padding: 0;
-	box-sizing: border-box;
+	// box-sizing: border-box;
 }
 
 .barraDer{
@@ -48,6 +48,12 @@ header a {
 	width: 100%;
     padding: 10px 0px 10px 10px;
     text-align: left;
+    height: 72px;
+}
+
+.barraNavegacion{
+    height: 60px;
+    padding-top: 2em;
 }
 
 nav {
@@ -68,7 +74,7 @@ nav ul li{
 	letter-spacing: 1px; 
 	text-decoration: none;
 	list-style-type: none;
-	box-sizing: border-box;
+	// box-sizing: border-box;
 } 
 
 nav ul li a {
@@ -87,7 +93,7 @@ nav ul li a:hover {
 
 .follow{
     text-align: center;
-    padding-bottom: 10px;
+    // margin-bottom: 5em;
     width: 142px;
     height: 33px;
 }
@@ -97,16 +103,18 @@ nav ul li a:hover {
 	font-family: $tituloMain;
 	text-align: center;
 	font-style: italic;
+    overflow-y: hidden;
 }
 
 .promo, .promo1, .promo2, .promo3{
     font-family: 'Zen Kurenaido', sans-serif;
-	box-sizing: border-box;
+	// box-sizing: border-box;
 }
 
 .fotoProv{
-    padding-left: 9em;
+    // padding-left: 5em;
     overflow-y: hidden;
+    padding-left: 3em;
 }
 
 .prov1{
@@ -122,7 +130,7 @@ nav ul li a:hover {
 	justify-content: center;	
 	padding: 10px;
 	box-sizing: border-box;
-	width: 200px;
+	width: 250px;
 }
 
 .textoPromo1, .textoPromo3{
@@ -134,26 +142,53 @@ nav ul li a:hover {
 	width: 250px;
 }
 
+.piePagina{
+    height: 70px;
+}
+
 @media only screen and (min-width: 0px) and (max-width: 768px){
    
+    .encabezado{
+        width: 100%;
+        padding: 10px 0px 10px 10px;
+        height: 90px;
+        text-align: left;
+    }
+
+    #imagenMarca{
+        margin-left: 3em;
+    }
+
+    .barraNavegacion{
+        height: 70px;
+    }
+
     .fotoProv{
        padding-left: 0px;
    }
 
    .textoPromo{
-       margin-left: 3em;
+       margin-left: 2em;
        margin-bottom: 1.5em;
    }
 
    .textoPromo1, .textoPromo3{
-       margin-left: 0.5em;
+    //    margin-left: 0.5em;
        margin-bottom: 2em;
+       padding-left: 35px;
    }
 
    .textoPromo2{
-       margin-left: 3em;
+       margin-left: 2em;
        margin-bottom: 2em;
    }
+
+  
+
+//    .par1{
+//     width: 300px;
+//     height: 116px;
+//    }
    
      // index
     .gridPadre {
@@ -184,6 +219,7 @@ nav ul li a:hover {
 
 	.barraNavegacion{
 		grid-area: barraNavegacion;
+        padding-left: 1em;
 	}	
 	
 	.mainContainer {
@@ -203,6 +239,7 @@ nav ul li a:hover {
 	.tituloContenido {
 		grid-area: title;
 		justify-content: center;
+        margin-top: 10px;
 	}
 	
 	.promo {
@@ -220,7 +257,7 @@ nav ul li a:hover {
 	.promo2 {
 		grid-area: promo2;
 		flex-direction: column;
-        overflow-y: hidden;        
+        overflow-y: hidden;
 	}
 	
 	.promo3 {
@@ -298,7 +335,7 @@ nav ul li a:hover {
         "encabezado barraNavegacion barraNavegacion barraNavegacion"
         "main main main main"
         "footer footer footer footer"; 
-		grid-template-rows: 20px 0.2fr 0.9fr 0.1fr; 
+		grid-template-rows: 20px 0.1fr 0.9fr 0.1fr; 
 		grid-template-columns: repeat(4, 1fr); 
 		.barraDer{
             grid-area: contacto;
