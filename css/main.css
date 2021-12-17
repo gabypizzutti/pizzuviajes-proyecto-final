@@ -6,11 +6,256 @@ h5, h4, h3 {
   overflow-y: hidden;
 }
 
+.icono {
+  width: 1em;
+}
+
+.imagen {
+  width: 1.5em;
+}
+
+.logo {
+  width: 3rem;
+}
+
+.provincia, .imgCar1, .imgCar2 {
+  width: 250px;
+  height: 200px;
+}
+
+.redes, .method {
+  width: 2rem;
+}
+
+.star {
+  width: 30%;
+}
+
+.iconCar {
+  width: 1em;
+}
+
+.item {
+  text-align: right;
+}
+
+.nombreLogo {
+  font-family: "Permanent Marker", cursive;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  overflow-y: hidden;
+}
+
+.navbar-expand-lg {
+  background-color: #23c4c2;
+}
+
+#navbarNav {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav {
+  list-style-type: none;
+  font-family: "Permanent Marker", cursive;
+}
+
+nav ul li {
+  letter-spacing: 1px;
+  text-decoration: none;
+  list-style-type: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  color: #0771db;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.titleFirst {
+  font-family: 'Zen Kurenaido', sans-serif;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.optionTitle {
+  text-align: center;
+}
+
+.options {
+  text-align: center;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.pCar {
+  font-size: 12px;
+  color: gray;
+}
+
+.carPlace {
+  width: 250px;
+}
+
+.carDate {
+  width: 130px;
+}
+
+.clock {
+  width: 120px;
+}
+
+.atribute {
+  text-align: center;
+}
+
+.infoCar {
+  text-align: center;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+body {
+  text-align: center;
+}
+
+.price {
+  font-family: 'Zen Kurenaido', sans-serif;
+  margin-bottom: 0px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.category {
+  text-align: center;
+  font-size: 12px;
+}
+
+.aep {
+  width: 300px;
+  height: 50px;
+}
+
+.formAdults {
+  width: 130px;
+}
+
+.square {
+  margin-top: 2px !important;
+}
+
+.in, .out {
+  width: 140px;
+}
+
+.pax {
+  width: 70px;
+}
+
+.plane {
+  width: 300px;
+  text-align: center;
+}
+
+.time {
+  width: 150px;
+}
+
+.custom-select {
+  width: 190px;
+}
+
+.accept {
+  text-align: start;
+}
+
+.typeDocument {
+  margin-left: 2em;
+}
+
+.titleThanks {
+  font-family: 'Zen Kurenaido', sans-serif;
+  margin-bottom: 0px;
+  color: #23c4c2;
+  text-align: center;
+}
+
+.pais, .cuotas, .type {
+  text-align: center;
+}
+
+.boton-base, .boton-continue, .boton-volverAtras, .boton-confirmarPago, .boton-volverHome {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #23c4c2;
+  border-color: #23c4c2;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  color: white;
+}
+
+.boton-base a, .boton-continue a, .boton-volverAtras a, .boton-confirmarPago a, .boton-volverHome a {
+  text-decoration: none;
+}
+
+.boton-continue:hover {
+  cursor: pointer;
+  background-color: lightsalmon;
+}
+
+.boton-volverAtras {
+  margin-right: 5px;
+}
+
+.boton-volverAtras:hover {
+  cursor: pointer;
+  background-color: lightskyblue;
+}
+
+.boton-confirmarPago {
+  margin-right: 5px;
+}
+
+.boton-confirmarPago:hover {
+  cursor: pointer;
+  background-color: magenta;
+}
+
+.boton-volverHome:hover {
+  cursor: pointer;
+  background-color: violet;
+}
+
+.foot {
+  background-color: #23c4c2;
+}
+
+.titleFoot {
+  font-family: "Permanent Marker", cursive;
+  color: white;
+}
+
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .barraDer {
@@ -50,6 +295,12 @@ header a {
   width: 100%;
   padding: 10px 0px 10px 10px;
   text-align: left;
+  height: 72px;
+}
+
+.barraNavegacion {
+  height: 60px;
+  padding-top: 2em;
 }
 
 nav {
@@ -70,8 +321,6 @@ nav ul li {
   letter-spacing: 1px;
   text-decoration: none;
   list-style-type: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 nav ul li a {
@@ -90,7 +339,6 @@ nav ul li a:hover {
 
 .follow {
   text-align: center;
-  padding-bottom: 10px;
   width: 142px;
   height: 33px;
 }
@@ -99,17 +347,16 @@ nav ul li a:hover {
   font-family: "Zen Kurenaido", sans-serif;
   text-align: center;
   font-style: italic;
+  overflow-y: hidden;
 }
 
 .promo, .promo1, .promo2, .promo3 {
   font-family: 'Zen Kurenaido', sans-serif;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .fotoProv {
-  padding-left: 9em;
   overflow-y: hidden;
+  padding-left: 3em;
 }
 
 .prov1 {
@@ -130,7 +377,7 @@ nav ul li a:hover {
   padding: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 200px;
+  width: 250px;
 }
 
 .textoPromo1, .textoPromo3 {
@@ -145,20 +392,36 @@ nav ul li a:hover {
   width: 250px;
 }
 
+.piePagina {
+  height: 70px;
+}
+
 @media only screen and (min-width: 0px) and (max-width: 768px) {
+  .encabezado {
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+    height: 90px;
+    text-align: left;
+  }
+  #imagenMarca {
+    margin-left: 3em;
+  }
+  .barraNavegacion {
+    height: 70px;
+  }
   .fotoProv {
     padding-left: 0px;
   }
   .textoPromo {
-    margin-left: 3em;
+    margin-left: 2em;
     margin-bottom: 1.5em;
   }
   .textoPromo1, .textoPromo3 {
-    margin-left: 0.5em;
     margin-bottom: 2em;
+    padding-left: 35px;
   }
   .textoPromo2 {
-    margin-left: 3em;
+    margin-left: 2em;
     margin-bottom: 2em;
   }
   .gridPadre {
@@ -190,6 +453,7 @@ nav ul li a:hover {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: barraNavegacion;
+    padding-left: 1em;
   }
   .mainContainer {
     -ms-grid-row: 4;
@@ -209,6 +473,7 @@ nav ul li a:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: 10px;
   }
   .promo {
     -ms-grid-row: 2;
@@ -318,8 +583,8 @@ nav ul li a:hover {
     display: -ms-grid;
     display: grid;
         grid-template-areas: "contacto contacto contacto contacto" "encabezado barraNavegacion barraNavegacion barraNavegacion" "main main main main" "footer footer footer footer";
-    -ms-grid-rows: 20px 0.2fr 0.9fr 0.1fr;
-        grid-template-rows: 20px 0.2fr 0.9fr 0.1fr;
+    -ms-grid-rows: 20px 0.1fr 0.9fr 0.1fr;
+        grid-template-rows: 20px 0.1fr 0.9fr 0.1fr;
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
   }
@@ -621,253 +886,6 @@ nav ul li a:hover {
     font-family: "Permanent Marker", cursive;
     color: white;
   }
-}
-
-.icono {
-  width: 1em;
-}
-
-.imagen {
-  width: 1.5em;
-}
-
-.logo {
-  width: 3rem;
-}
-
-.provincia, .imgCar1, .imgCar2 {
-  width: 250px;
-  height: 200px;
-}
-
-.redes, .method {
-  width: 2rem;
-}
-
-.star {
-  width: 30%;
-}
-
-.iconCar {
-  width: 1em;
-}
-
-.item {
-  text-align: right;
-}
-
-.nombreLogo {
-  font-family: "Permanent Marker", cursive;
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-  text-decoration: none;
-  overflow-y: hidden;
-}
-
-.navbar-expand-lg {
-  background-color: #23c4c2;
-}
-
-#navbarNav {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-nav {
-  list-style-type: none;
-  font-family: "Permanent Marker", cursive;
-}
-
-nav ul li {
-  letter-spacing: 1px;
-  text-decoration: none;
-  list-style-type: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: white;
-}
-
-nav ul li a:hover {
-  color: #0771db;
-}
-
-.container-fluid {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.titleFirst {
-  font-family: 'Zen Kurenaido', sans-serif;
-  margin-bottom: 0px;
-  text-align: center;
-}
-
-.optionTitle {
-  text-align: center;
-}
-
-.options {
-  text-align: center;
-  margin-right: 5px;
-  margin-left: 5px;
-}
-
-.pCar {
-  font-size: 12px;
-  color: gray;
-}
-
-.carPlace {
-  width: 250px;
-}
-
-.carDate {
-  width: 130px;
-}
-
-.clock {
-  width: 120px;
-}
-
-.atribute {
-  text-align: center;
-}
-
-.infoCar {
-  text-align: center;
-  padding-left: 60px;
-  padding-right: 60px;
-}
-
-body {
-  text-align: center;
-}
-
-.price {
-  font-family: 'Zen Kurenaido', sans-serif;
-  margin-bottom: 0px;
-  text-align: center;
-  font-size: 1.5em;
-}
-
-.category {
-  text-align: center;
-  font-size: 12px;
-}
-
-.aep {
-  width: 300px;
-  height: 50px;
-}
-
-.formAdults {
-  width: 130px;
-}
-
-.square {
-  margin-top: 2px !important;
-}
-
-.in, .out {
-  width: 140px;
-}
-
-.pax {
-  width: 70px;
-}
-
-.plane {
-  width: 300px;
-  text-align: center;
-}
-
-.time {
-  width: 150px;
-}
-
-.custom-select {
-  width: 190px;
-}
-
-.accept {
-  text-align: start;
-}
-
-.typeDocument {
-  margin-left: 2em;
-}
-
-.titleThanks {
-  font-family: 'Zen Kurenaido', sans-serif;
-  margin-bottom: 0px;
-  color: #23c4c2;
-  text-align: center;
-}
-
-.pais, .cuotas, .type {
-  text-align: center;
-}
-
-.boton-base, .boton-continue, .boton-volverAtras, .boton-confirmarPago, .boton-volverHome {
-  display: inline-block;
-  font-weight: 400;
-  text-align: center;
-  vertical-align: middle;
-  background-color: #23c4c2;
-  border-color: #23c4c2;
-  border: 1px solid transparent;
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  border-radius: 0.25rem;
-  color: white;
-}
-
-.boton-base a, .boton-continue a, .boton-volverAtras a, .boton-confirmarPago a, .boton-volverHome a {
-  text-decoration: none;
-}
-
-.boton-continue:hover {
-  cursor: pointer;
-  background-color: lightsalmon;
-}
-
-.boton-volverAtras {
-  margin-right: 5px;
-}
-
-.boton-volverAtras:hover {
-  cursor: pointer;
-  background-color: lightskyblue;
-}
-
-.boton-confirmarPago {
-  margin-right: 5px;
-}
-
-.boton-confirmarPago:hover {
-  cursor: pointer;
-  background-color: magenta;
-}
-
-.boton-volverHome:hover {
-  cursor: pointer;
-  background-color: violet;
-}
-
-.foot {
-  background-color: #23c4c2;
-}
-
-.titleFoot {
-  font-family: "Permanent Marker", cursive;
-  color: white;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 768px) {
