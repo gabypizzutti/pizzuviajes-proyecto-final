@@ -46,7 +46,7 @@ header a {
 
 .encabezado{
 	width: 100%;
-	padding: 2em;
+    padding: 10px 0px 10px 10px;
     text-align: left;
 }
 
@@ -134,26 +134,25 @@ nav ul li a:hover {
 	width: 250px;
 }
 
-
-
 @media only screen and (min-width: 0px) and (max-width: 768px){
-    
+   
     .fotoProv{
        padding-left: 0px;
    }
 
    .textoPromo{
-       margin-left: 4em;
-       margin-bottom: 5px;
+       margin-left: 3em;
+       margin-bottom: 1.5em;
    }
 
-   .textoPromo1{
-       margin-left: 2.5em;
-       margin-bottom: 12px;
+   .textoPromo1, .textoPromo3{
+       margin-left: 0.5em;
+       margin-bottom: 2em;
    }
 
    .textoPromo2{
-       margin-left: 5em;
+       margin-left: 3em;
+       margin-bottom: 2em;
    }
    
      // index
@@ -161,29 +160,26 @@ nav ul li a:hover {
 		display: $grid; 
 		grid-auto-columns: 1fr; 
 		grid-template-columns: 100%; 
-		grid-template-rows: 50px 80px 60px 1650px 120px; 
+		grid-template-rows: 50px 90px 60px 1650px 120px; 
 		grid-template-areas: 
-		"barraDer"
-		"encabezado" 
+		"contacto"
+		"header" 
 		"barraNavegacion"
 		"main"
 		"piePagina"; 
 	}
 	
-	.barraDer{
-		grid-area: barraDer;
-		font-size: 6px;
+	.contacto{
+		grid-area: contacto;
+		font-size: 12px;
+        letter-spacing: 4px;
 	}
 
 	.encabezado{
-		grid-area: marcaLogo;
-		width: 60px;
+		grid-area: header;
+		width: auto;
 		line-height: normal;
 		padding: 0px;
-	}
-
-    #imagenMarca{
-		width: 20px;
 	}
 
 	.barraNavegacion{
@@ -212,12 +208,13 @@ nav ul li a:hover {
 	.promo {
 		grid-area: promo;
 		flex-direction: column;
-        padding-left: 17px;
+        overflow-y: hidden;
     }
 	
 	.promo1 {
 		grid-area: promo1;
 		flex-direction: column;
+        overflow-y: hidden;
 	}
 	
 	.promo2 {
@@ -229,6 +226,7 @@ nav ul li a:hover {
 	.promo3 {
 		grid-area: promo3;
 		flex-direction: column;
+        overflow-y: hidden;
 	}
 	
 	.piePagina{
@@ -319,7 +317,7 @@ nav ul li a:hover {
             grid-area: barraNavegacion;
             display: flex;
             flex-direction: row;
-            justify-content: center;
+            justify-content: flex-start;
         }
         
         .mainContainer {
@@ -418,7 +416,7 @@ nav ul li a:hover {
 	.barraNavegacion{
 		grid-area: barraNavegacion;
 		display: flex;
-		justify-content: center;
+		justify-content: flex-start;
         flex-direction: row;
 	}
 	

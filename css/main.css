@@ -48,7 +48,7 @@ header a {
 
 .encabezado {
   width: 100%;
-  padding: 2em;
+  padding: 10px 0px 10px 10px;
   text-align: left;
 }
 
@@ -150,15 +150,16 @@ nav ul li a:hover {
     padding-left: 0px;
   }
   .textoPromo {
-    margin-left: 4em;
-    margin-bottom: 5px;
+    margin-left: 3em;
+    margin-bottom: 1.5em;
   }
-  .textoPromo1 {
-    margin-left: 2.5em;
-    margin-bottom: 12px;
+  .textoPromo1, .textoPromo3 {
+    margin-left: 0.5em;
+    margin-bottom: 2em;
   }
   .textoPromo2 {
-    margin-left: 5em;
+    margin-left: 3em;
+    margin-bottom: 2em;
   }
   .gridPadre {
     display: -ms-grid;
@@ -166,24 +167,24 @@ nav ul li a:hover {
     grid-auto-columns: 1fr;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 50px 80px 60px 1650px 120px;
-        grid-template-rows: 50px 80px 60px 1650px 120px;
-        grid-template-areas: "barraDer" "encabezado"  "barraNavegacion" "main" "piePagina";
+    -ms-grid-rows: 50px 90px 60px 1650px 120px;
+        grid-template-rows: 50px 90px 60px 1650px 120px;
+        grid-template-areas: "contacto" "header"  "barraNavegacion" "main" "piePagina";
   }
-  .barraDer {
+  .contacto {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
-    grid-area: barraDer;
-    font-size: 6px;
+    grid-area: contacto;
+    font-size: 12px;
+    letter-spacing: 4px;
   }
   .encabezado {
-    grid-area: marcaLogo;
-    width: 60px;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: header;
+    width: auto;
     line-height: normal;
     padding: 0px;
-  }
-  #imagenMarca {
-    width: 20px;
   }
   .barraNavegacion {
     -ms-grid-row: 3;
@@ -217,7 +218,7 @@ nav ul li a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-left: 17px;
+    overflow-y: hidden;
   }
   .promo1 {
     -ms-grid-row: 3;
@@ -227,6 +228,7 @@ nav ul li a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    overflow-y: hidden;
   }
   .promo2 {
     -ms-grid-row: 4;
@@ -246,6 +248,7 @@ nav ul li a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    overflow-y: hidden;
   }
   .piePagina {
     -ms-grid-row: 5;
@@ -358,9 +361,9 @@ nav ul li a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .gridPadre .mainContainer {
     -ms-grid-row: 3;
@@ -506,9 +509,9 @@ nav ul li a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
