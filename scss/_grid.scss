@@ -52,8 +52,10 @@ header a {
 }
 
 .barraNavegacion{
-    height: 60px;
-    padding-top: 2em;
+    height: 41px;
+    padding-top: 1.6em;
+    padding-bottom: 1.6em;
+    
 }
 
 nav {
@@ -104,6 +106,8 @@ nav ul li a:hover {
 	text-align: center;
 	font-style: italic;
     overflow-y: hidden;
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
 .promo, .promo1, .promo2, .promo3{
@@ -131,6 +135,8 @@ nav ul li a:hover {
 	padding: 10px;
 	box-sizing: border-box;
 	width: 250px;
+    font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    line-height: 1.5em;
 }
 
 .textoPromo1, .textoPromo3{
@@ -140,6 +146,8 @@ nav ul li a:hover {
 	padding-top: 10px;
 	// box-sizing: border-box;
 	width: 250px;
+    font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    line-height: 1.5em;
 }
 
 .piePagina{
@@ -148,6 +156,10 @@ nav ul li a:hover {
 
 @media only screen and (min-width: 0px) and (max-width: 768px){
    
+    .barraDer{
+        font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    }
+
     .encabezado{
         width: 100%;
         padding: 10px 0px 10px 10px;
@@ -160,7 +172,9 @@ nav ul li a:hover {
     }
 
     .barraNavegacion{
-        height: 70px;
+        height: 40px;
+        padding-top: 0;
+        text-align: center;
     }
 
     .fotoProv{
@@ -170,6 +184,7 @@ nav ul li a:hover {
    .textoPromo{
        margin-left: 2em;
        margin-bottom: 1.5em;
+       margin-top: 1em;
    }
 
    .textoPromo1, .textoPromo3{
@@ -183,7 +198,9 @@ nav ul li a:hover {
        margin-bottom: 2em;
    }
 
-  
+   .tituloPromociones{
+       margin-top: 0.3em;
+   }
 
 //    .par1{
 //     width: 300px;
@@ -195,7 +212,7 @@ nav ul li a:hover {
 		display: $grid; 
 		grid-auto-columns: 1fr; 
 		grid-template-columns: 100%; 
-		grid-template-rows: 50px 90px 60px 1650px 120px; 
+		grid-template-rows: 30px 90px 60px 1650px 120px; 
 		grid-template-areas: 
 		"contacto"
 		"header" 
@@ -226,7 +243,7 @@ nav ul li a:hover {
 		grid-area: main;
 		display: $grid;
 		grid-template-columns: 100%;
-		grid-template-rows: 0.2fr 0.9fr 0.9fr 0.9fr 0.9fr;
+		grid-template-rows: 0.3fr 0.9fr 0.9fr 0.9fr 0.9fr;
 		gap: 0px 0px;
 		grid-template-areas:
 		"title "
@@ -326,7 +343,227 @@ nav ul li a:hover {
     }
 }
 
+@media only screen and (min-width: 769px) and (max-width:1023px) {
+    
+    .barraDer{
+        font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    }
+    
+    .barraNavegacion{
+        // padding-bottom: 0px;
+        // padding-top: 0.5em;
+        // height: 84px;
+        display: block;
+        padding: 0.5rem 1rem;
+    }
+    
+    .textoPromo{
+        // margin-left: 2em;
+        // margin-bottom: 1.5em;
+        // margin-top: 1em;
+        display: flex;
+        text-align: center;
+    }
+
+
+    .gridPadre{
+		display: $grid;
+		grid-template-areas:
+        "contacto contacto contacto contacto"
+        "encabezado barraNavegacion barraNavegacion barraNavegacion"
+        "main main main main"
+        "footer footer footer footer"; 
+		grid-template-rows: 19px 0.1fr 0.9fr 0.1fr; 
+		grid-template-columns: repeat(4, 1fr); 
+		.barraDer{
+            grid-area: contacto;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            column-gap: 8px;
+        }
+        
+        .encabezado{
+            grid-area: encabezado;
+            justify-content: flex-start;
+        }
+        
+        .barraNavegacion{
+            grid-area: barraNavegacion;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        
+        .mainContainer {
+            grid-area: main;
+            display: grid;
+            grid-template-columns: 0.2fr 0.5fr 0.5fr 0.5fr;
+            grid-template-rows: 0.3fr 1fr 1fr;
+            gap: 0px 0px;
+            grid-template-areas:
+              "title title title title"
+              "promo promo promo1 promo1"
+              "promo2 promo2 promo3 promo3";
+        }
+        
+        .tituloContenido {
+            grid-area: title;
+            padding: 20px;
+        }
+        
+        .promo {
+            grid-area: promo;
+            display: flex;
+            flex-direction: row;
+            padding-left: 5em;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            box-sizing: border-box;
+            font-family: $tituloMain;
+	        box-sizing: border-box;
+        }
+        
+        .promo1 {
+            grid-area: promo1;
+            display: flex;
+            flex-direction: row;
+            padding: 20px;
+            font-family: $tituloMain;
+            box-sizing: border-box;
+        }
+        
+        .promo2 {
+            grid-area: promo2;
+            display: flex;
+            flex-direction: row;
+            padding-left: 5em;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            font-family: $tituloMain;
+            box-sizing: border-box;
+        }
+        
+        .promo3 {
+            grid-area: promo3;
+            display: flex;
+            flex-direction: row;
+            padding: 20px;
+            font-family: $tituloMain;
+            box-sizing: border-box;
+        }
+        
+        .piePagina{
+            grid-area: footer;
+            text-align: center;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            font-family: $letraPrincipal;
+            color: $colorLetra; 
+        }
+    }
+
+    // page paquete
+    .gridPaquete{	
+		display: $grid; 
+		grid-template-areas: 
+		"contacto contacto contacto contacto"
+        "encabezado barraNavegacion barraNavegacion barraNavegacion"
+        "main main main main"
+        "footer footer footer footer";
+        grid-template-columns: repeat(4, 1fr); 
+		grid-template-rows: 20px 0.9fr 600px 0.6fr;
+  	}
+	
+	.barraDer{
+		grid-area: contacto;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		column-gap: 8px;
+	}
+	
+	.encabezado{
+		grid-area: encabezado;
+		display: flex-start;
+	}
+	
+	.barraNavegacion{
+		grid-area: barraNavegacion;
+		display: flex;
+		justify-content: flex-start;
+        flex-direction: row;
+	}
+	
+	.mainPaquete{
+		grid-area: main;
+		display: grid;
+		grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+		grid-template-rows: 0.3fr 1fr 1fr;
+		gap: 0px 0px;
+		grid-template-areas:
+		 "title title title title"
+		 "promo promo promo1 promo1"
+		 "promo2 promo2 promo3 promo3";
+	}
+	
+	.tituloContenido {
+		grid-area: title;
+		padding: 20px;
+	}
+	
+	.promo {
+		grid-area: promo;
+		display: flex;
+		flex-direction: row;
+		padding-left: 5em;
+		padding-top: 1em;
+		padding-bottom: 1em;
+        font-family: $tituloMain;
+        box-sizing: border-box;
+	}
+	
+	.promo1 {
+		grid-area: promo1;
+		display: flex;
+		flex-direction: row;
+		padding: 20px;
+        font-family: $tituloMain;
+        box-sizing: border-box;
+	}
+	
+	.promo2 {
+		grid-area: promo2;
+		display: flex;
+		flex-direction: row;
+		padding-left: 5em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        font-family: $tituloMain;
+        box-sizing: border-box;
+	}
+	
+	.promo3 {
+		grid-area: promo3;
+		display: flex;
+		flex-direction: row;
+		padding: 20px;
+        font-family: $tituloMain;
+        box-sizing: border-box;
+	}
+
+	.piePagina{
+		grid-area: footer;
+		text-align: center;
+        padding-top: 6px;
+        padding-bottom: 6px;
+		font-family: $letraPrincipal;
+		color: $colorLetra;
+	}
+}
+
 @media only screen and (min-width: 1024px){
+
 	// index
     .gridPadre{
 		display: $grid;
@@ -418,8 +655,8 @@ nav ul li a:hover {
         .piePagina{
             grid-area: footer;
             text-align: center;
-            padding-top: 6px;
-            padding-bottom: 6px;
+            padding-top: 3px;
+            padding-bottom: 3px;
             font-family: $letraPrincipal;
             color: $colorLetra; 
         }
