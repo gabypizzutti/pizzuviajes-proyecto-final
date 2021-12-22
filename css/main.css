@@ -299,8 +299,9 @@ header a {
 }
 
 .barraNavegacion {
-  height: 60px;
-  padding-top: 2em;
+  height: 41px;
+  padding-top: 1.6em;
+  padding-bottom: 1.6em;
 }
 
 nav {
@@ -348,6 +349,8 @@ nav ul li a:hover {
   text-align: center;
   font-style: italic;
   overflow-y: hidden;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 .promo, .promo1, .promo2, .promo3 {
@@ -378,6 +381,8 @@ nav ul li a:hover {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 250px;
+  font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  line-height: 1.5em;
 }
 
 .textoPromo1, .textoPromo3 {
@@ -390,6 +395,8 @@ nav ul li a:hover {
   padding-left: 50px;
   padding-top: 10px;
   width: 250px;
+  font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  line-height: 1.5em;
 }
 
 .piePagina {
@@ -397,6 +404,9 @@ nav ul li a:hover {
 }
 
 @media only screen and (min-width: 0px) and (max-width: 768px) {
+  .barraDer {
+    font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  }
   .encabezado {
     width: 100%;
     padding: 10px 0px 10px 10px;
@@ -407,7 +417,9 @@ nav ul li a:hover {
     margin-left: 3em;
   }
   .barraNavegacion {
-    height: 70px;
+    height: 40px;
+    padding-top: 0;
+    text-align: center;
   }
   .fotoProv {
     padding-left: 0px;
@@ -415,6 +427,7 @@ nav ul li a:hover {
   .textoPromo {
     margin-left: 2em;
     margin-bottom: 1.5em;
+    margin-top: 1em;
   }
   .textoPromo1, .textoPromo3 {
     margin-bottom: 2em;
@@ -424,14 +437,17 @@ nav ul li a:hover {
     margin-left: 2em;
     margin-bottom: 2em;
   }
+  .tituloPromociones {
+    margin-top: 0.3em;
+  }
   .gridPadre {
     display: -ms-grid;
     display: grid;
     grid-auto-columns: 1fr;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 50px 90px 60px 1650px 120px;
-        grid-template-rows: 50px 90px 60px 1650px 120px;
+    -ms-grid-rows: 30px 90px 60px 1650px 120px;
+        grid-template-rows: 30px 90px 60px 1650px 120px;
         grid-template-areas: "contacto" "header"  "barraNavegacion" "main" "piePagina";
   }
   .contacto {
@@ -462,7 +478,7 @@ nav ul li a:hover {
     display: -ms-grid;
     display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 0.2fr 0.9fr 0.9fr 0.9fr 0.9fr;
+        grid-template-rows: 0.3fr 0.9fr 0.9fr 0.9fr 0.9fr;
     gap: 0px 0px;
         grid-template-areas: "title " "promo"  "promo1" "promo2" "promo3";
   }
@@ -574,6 +590,329 @@ nav ul li a:hover {
     padding-bottom: 20px;
     font-family: 'Permanent Marker', cursive;
     /*letra extraida de google fonts*/
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+  .barraDer {
+    font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  }
+  .barraNavegacion {
+    display: block;
+    padding: 0.5rem 1rem;
+  }
+  .textoPromo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+  }
+  .gridPadre {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "contacto contacto contacto contacto" "encabezado barraNavegacion barraNavegacion barraNavegacion" "main main main main" "footer footer footer footer";
+    -ms-grid-rows: 19px 0.1fr 0.9fr 0.1fr;
+        grid-template-rows: 19px 0.1fr 0.9fr 0.1fr;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+  .gridPadre .barraDer {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: contacto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-column-gap: 8px;
+            column-gap: 8px;
+  }
+  .gridPadre .encabezado {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: encabezado;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .gridPadre .barraNavegacion {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 3;
+    grid-area: barraNavegacion;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .gridPadre .mainContainer {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: main;
+    display: -ms-grid;
+    display: grid;
+        grid-template-columns: 0.2fr 0.5fr 0.5fr 0.5fr;
+        grid-template-rows: 0.3fr 1fr 1fr;
+    gap: 0px 0px;
+        grid-template-areas: "title title title title" "promo promo promo1 promo1" "promo2 promo2 promo3 promo3";
+  }
+  .gridPadre .tituloContenido {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: title;
+    padding: 20px;
+  }
+  .gridPadre .promo {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: promo;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-left: 5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: "Zen Kurenaido", sans-serif;
+    box-sizing: border-box;
+  }
+  .gridPadre .promo1 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-area: promo1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 20px;
+    font-family: "Zen Kurenaido", sans-serif;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .gridPadre .promo2 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: promo2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-left: 5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-family: "Zen Kurenaido", sans-serif;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .gridPadre .promo3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-area: promo3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 20px;
+    font-family: "Zen Kurenaido", sans-serif;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .gridPadre .piePagina {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: footer;
+    text-align: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-family: "Permanent Marker", cursive;
+    color: white;
+  }
+  .gridPaquete {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "contacto contacto contacto contacto" "encabezado barraNavegacion barraNavegacion barraNavegacion" "main main main main" "footer footer footer footer";
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: 20px 0.9fr 600px 0.6fr;
+        grid-template-rows: 20px 0.9fr 600px 0.6fr;
+  }
+  .barraDer {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: contacto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-column-gap: 8px;
+            column-gap: 8px;
+  }
+  .encabezado {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: encabezado;
+    display: flex-start;
+  }
+  .barraNavegacion {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 3;
+    grid-area: barraNavegacion;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .mainPaquete {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: main;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+    -ms-grid-rows: 0.3fr 1fr 1fr;
+        grid-template-rows: 0.3fr 1fr 1fr;
+    gap: 0px 0px;
+        grid-template-areas: "title title title title" "promo promo promo1 promo1" "promo2 promo2 promo3 promo3";
+  }
+  .tituloContenido {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: title;
+    padding: 20px;
+  }
+  .promo {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: promo;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-left: 5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-family: "Zen Kurenaido", sans-serif;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .promo1 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-area: promo1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 20px;
+    font-family: "Zen Kurenaido", sans-serif;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .promo2 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: promo2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-left: 5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-family: "Zen Kurenaido", sans-serif;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .promo3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-area: promo3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 20px;
+    font-family: "Zen Kurenaido", sans-serif;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .piePagina {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: footer;
+    text-align: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-family: "Permanent Marker", cursive;
     color: white;
   }
 }
@@ -728,8 +1067,8 @@ nav ul li a:hover {
     -ms-grid-column-span: 4;
     grid-area: footer;
     text-align: center;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
     font-family: "Permanent Marker", cursive;
     color: white;
   }
