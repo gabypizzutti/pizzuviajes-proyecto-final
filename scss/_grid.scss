@@ -181,10 +181,6 @@ nav ul li a:hover {
        padding-left: 0px;
     }
 
-    .calafate{
-        padding-bottom: 0.5em;
-    }
-
     .textoPromo{
        margin-left: 2em;
        margin-bottom: 1em;
@@ -195,7 +191,7 @@ nav ul li a:hover {
     //    margin-left: 0.5em;
        margin-bottom: 1em;
        padding-left: 35px;
-       padding-top: 1em;
+       padding-top: 0.5em;
     }
 
     .textoPromo2{
@@ -248,7 +244,7 @@ nav ul li a:hover {
 		grid-area: main;
 		display: $grid;
 		grid-template-columns: 100%;
-		grid-template-rows: 0.3fr 0.9fr 0.9fr 0.9fr 0.9fr;
+		grid-template-rows: 0.2fr 0.9fr 0.9fr 0.9fr 0.9fr;
 		gap: 0px 0px;
 		grid-template-areas:
 		"title "
@@ -301,7 +297,7 @@ nav ul li a:hover {
     	display: $grid; 
 		grid-auto-columns: 1fr; 
 		grid-template-columns: 100%; 
-		grid-template-rows: 30px 90px 60px 1750px 70px; 
+		grid-template-rows: 30px 90px 60px 1650px 70px; 
 		grid-template-areas: 
 		"contacto"
 		"header" 
@@ -330,7 +326,7 @@ nav ul li a:hover {
 		grid-area: main;
 		display: $grid;
 		grid-template-columns: 100%;
-		grid-template-rows: 0.3fr 0.9fr 0.9fr 0.9fr 1fr;
+		grid-template-rows: 0.2fr 0.9fr 0.9fr 0.9fr 0.9fr;
 		gap: 0px 0px;
 		grid-template-areas:
 		"title "
@@ -350,24 +346,28 @@ nav ul li a:hover {
 		grid-area: promo;
 		flex-direction: column;
         overflow-y: hidden;
+        height: 380px;
     }
 	
 	.promo1 {
 		grid-area: promo1;
 		flex-direction: column;
         overflow-y: hidden;
+        height: 380px;
 	}
 	
 	.promo2 {
 		grid-area: promo2;
 		flex-direction: column;
         overflow-y: hidden;
+        height: 380px;
 	}
 	
 	.promo3 {
 		grid-area: promo3;
 		flex-direction: column;
         overflow-y: hidden;
+        height: 380px;
 	}
 	
 	.piePagina{
