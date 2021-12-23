@@ -48,11 +48,11 @@ header a {
 	width: 100%;
     padding: 10px 0px 10px 10px;
     text-align: left;
-    height: 72px;
+    height: 80px;
 }
 
 .barraNavegacion{
-    height: 41px;
+    height: 49px;
     padding-top: 1.6em;
     padding-bottom: 1.6em;
 }
@@ -95,7 +95,7 @@ nav ul li a:hover {
 .follow{
     text-align: center;
     // margin-bottom: 5em;
-    width: 142px;
+    width: 120px;
     height: 33px;
 }
 
@@ -117,7 +117,7 @@ nav ul li a:hover {
 .fotoProv{
     // padding-left: 5em;
     overflow-y: hidden;
-    padding-left: 3em;
+    padding-left: 5em;
 }
 
 .prov1{
@@ -161,7 +161,7 @@ nav ul li a:hover {
 
     .encabezado{
         width: 100%;
-        padding: 10px 0px 10px 10px;
+        padding: 10px 0px 10px 20px;
         height: 90px;
         text-align: left;
     }
@@ -174,31 +174,37 @@ nav ul li a:hover {
         height: 40px;
         padding-top: 0;
         text-align: center;
+        padding-top: 10px;
     }
 
     .fotoProv{
        padding-left: 0px;
-   }
+    }
 
-   .textoPromo{
+    .calafate{
+        padding-bottom: 0.5em;
+    }
+
+    .textoPromo{
        margin-left: 2em;
-       margin-bottom: 1.5em;
-       margin-top: 1em;
-   }
+       margin-bottom: 1em;
+       margin-top: 0.5em;
+    }
 
-   .textoPromo1, .textoPromo3{
+    .textoPromo1, .textoPromo3{
     //    margin-left: 0.5em;
-       margin-bottom: 2em;
+       margin-bottom: 1em;
        padding-left: 35px;
-   }
+       padding-top: 1em;
+    }
 
-   .textoPromo2{
+    .textoPromo2{
        margin-left: 2em;
-       margin-bottom: 2em;
-   }
+       margin-bottom: 1em;
+    }
 
    .tituloPromociones{
-       margin-top: 0.3em;
+       margin-top: 0.5em;
    }
 
 //    .par1{
@@ -211,16 +217,16 @@ nav ul li a:hover {
 		display: $grid; 
 		grid-auto-columns: 1fr; 
 		grid-template-columns: 100%; 
-		grid-template-rows: 30px 90px 60px 1650px 120px; 
+		grid-template-rows: 30px 90px 60px 1750px 70px; 
 		grid-template-areas: 
 		"contacto"
 		"header" 
-		"barraNavegacion"
+		"nav"
 		"main"
-		"piePagina"; 
+		"footer"; 
 	}
 	
-	.contacto{
+	.barraDer{
 		grid-area: contacto;
 		font-size: 12px;
         letter-spacing: 4px;
@@ -234,7 +240,7 @@ nav ul li a:hover {
 	}
 
 	.barraNavegacion{
-		grid-area: barraNavegacion;
+		grid-area: nav;
         padding-left: 1em;
 	}	
 	
@@ -283,63 +289,94 @@ nav ul li a:hover {
 	}
 	
 	.piePagina{
-		grid-area: piePagina;
+		grid-area: footer;
 		text-align: center;
 		font-family: 'Permanent Marker', cursive; /*letra extraida de google fonts*/
 		color: white;
-		height: 90px;
+		height: 70px;
 	}	
 
     // page paquete
-    .gridPaquetes{
-        display: grid; 
-        grid-auto-columns: 1fr; 
-        grid-template-columns: 100%; 
-        grid-template-rows: 0.1fr 0.1fr 0,1fr 0,5fr 0.2fr; 
-        grid-template-areas: 
-        "contacto"
-        "botonIndex" 
-        "nav"
-        "main"
-        "footer"; 
-    }
+    .gridPaquete{
+    	display: $grid; 
+		grid-auto-columns: 1fr; 
+		grid-template-columns: 100%; 
+		grid-template-rows: 30px 90px 60px 1750px 70px; 
+		grid-template-areas: 
+		"contacto"
+		"header" 
+		"nav"
+		"main"
+		"footer"; 
+	}
 
-    .contacto{
+    .barraDer{
         grid-area: contacto;
         font-size: 12px;
     }
 
-    header{
-        grid-area: botonIndex;
+    .encabezado{
+        grid-area: header;
         width: auto;
         line-height: normal;
         padding: 0px;
     }
 
-    nav{
+    .barraNavegacion{
         grid-area: nav;
     }	
 
-    main{
-        grid-area: main;
+    .mainPaquete {
+		grid-area: main;
+		display: $grid;
+		grid-template-columns: 100%;
+		grid-template-rows: 0.3fr 0.9fr 0.9fr 0.9fr 1fr;
+		gap: 0px 0px;
+		grid-template-areas:
+		"title "
+		"promo" 
+		"promo1"
+		"promo2"
+		"promo3";
+	}
+	
+	.tituloContenido {
+		grid-area: title;
+		justify-content: center;
+        margin-top: 10px;
+	}
+	
+	.promo {
+		grid-area: promo;
+		flex-direction: column;
+        overflow-y: hidden;
     }
-
-    .eleccionTramo{
-        padding-left: 0px;
-    }
-
-    .calafate, .cataratas{
-        padding-left: 0px;
-    }
-
-    footer{
-        grid-area: footer;
-        text-align: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        font-family: 'Permanent Marker', cursive; /*letra extraida de google fonts*/
-        color: white;
-    }
+	
+	.promo1 {
+		grid-area: promo1;
+		flex-direction: column;
+        overflow-y: hidden;
+	}
+	
+	.promo2 {
+		grid-area: promo2;
+		flex-direction: column;
+        overflow-y: hidden;
+	}
+	
+	.promo3 {
+		grid-area: promo3;
+		flex-direction: column;
+        overflow-y: hidden;
+	}
+	
+	.piePagina{
+		grid-area: footer;
+		text-align: center;
+		font-family: 'Permanent Marker', cursive; /*letra extraida de google fonts*/
+		color: white;
+		height: 90px;
+	}
 }
 
 @media only screen and (min-width: 769px) and (max-width:1023px) {
@@ -591,6 +628,7 @@ nav ul li a:hover {
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
+            padding-left: 3em;
         }
         
         .mainContainer {
@@ -691,6 +729,7 @@ nav ul li a:hover {
 		display: flex;
 		justify-content: flex-start;
         flex-direction: row;
+        padding-left: 3em;
 	}
 	
 	.mainPaquete{
