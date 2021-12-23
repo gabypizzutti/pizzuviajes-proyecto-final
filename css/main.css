@@ -425,9 +425,6 @@ nav ul li a:hover {
   .fotoProv {
     padding-left: 0px;
   }
-  .calafate {
-    padding-bottom: 0.5em;
-  }
   .textoPromo {
     margin-left: 2em;
     margin-bottom: 1em;
@@ -436,7 +433,7 @@ nav ul li a:hover {
   .textoPromo1, .textoPromo3 {
     margin-bottom: 1em;
     padding-left: 35px;
-    padding-top: 1em;
+    padding-top: 0.5em;
   }
   .textoPromo2 {
     margin-left: 2em;
@@ -483,7 +480,7 @@ nav ul li a:hover {
     display: -ms-grid;
     display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 0.3fr 0.9fr 0.9fr 0.9fr 0.9fr;
+        grid-template-rows: 0.2fr 0.9fr 0.9fr 0.9fr 0.9fr;
     gap: 0px 0px;
         grid-template-areas: "title " "promo"  "promo1" "promo2" "promo3";
   }
@@ -552,8 +549,8 @@ nav ul li a:hover {
     grid-auto-columns: 1fr;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 30px 90px 60px 1750px 70px;
-        grid-template-rows: 30px 90px 60px 1750px 70px;
+    -ms-grid-rows: 30px 90px 60px 1650px 70px;
+        grid-template-rows: 30px 90px 60px 1650px 70px;
         grid-template-areas: "contacto" "header"  "nav" "main" "footer";
   }
   .barraDer {
@@ -583,8 +580,8 @@ nav ul li a:hover {
     display: grid;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 0.3fr 0.9fr 0.9fr 0.9fr 1fr;
-        grid-template-rows: 0.3fr 0.9fr 0.9fr 0.9fr 1fr;
+    -ms-grid-rows: 0.2fr 0.9fr 0.9fr 0.9fr 0.9fr;
+        grid-template-rows: 0.2fr 0.9fr 0.9fr 0.9fr 0.9fr;
     gap: 0px 0px;
         grid-template-areas: "title " "promo"  "promo1" "promo2" "promo3";
   }
@@ -606,6 +603,7 @@ nav ul li a:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     overflow-y: hidden;
+    height: 380px;
   }
   .promo1 {
     -ms-grid-row: 3;
@@ -616,6 +614,7 @@ nav ul li a:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     overflow-y: hidden;
+    height: 380px;
   }
   .promo2 {
     -ms-grid-row: 4;
@@ -626,6 +625,7 @@ nav ul li a:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     overflow-y: hidden;
+    height: 380px;
   }
   .promo3 {
     -ms-grid-row: 5;
@@ -636,6 +636,7 @@ nav ul li a:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     overflow-y: hidden;
+    height: 380px;
   }
   .piePagina {
     -ms-grid-row: 5;
