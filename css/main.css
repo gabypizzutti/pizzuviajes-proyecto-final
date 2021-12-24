@@ -256,6 +256,8 @@ body {
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .barraDer {
@@ -299,7 +301,7 @@ header a {
 }
 
 .barraNavegacion {
-  height: 49px;
+  height: 89px;
   padding-top: 1.6em;
   padding-bottom: 1.6em;
 }
@@ -405,7 +407,7 @@ nav ul li a:hover {
 
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   .barraDer {
-    font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-family: Arial;
   }
   .encabezado {
     width: 100%;
@@ -418,9 +420,9 @@ nav ul li a:hover {
   }
   .barraNavegacion {
     height: 40px;
-    padding-top: 0;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 1.6em;
+    padding-bottom: 1.6em;
   }
   .fotoProv {
     padding-left: 0px;
@@ -625,7 +627,7 @@ nav ul li a:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     overflow-y: hidden;
-    height: 380px;
+    height: 360px;
   }
   .promo3 {
     -ms-grid-row: 5;
@@ -636,7 +638,7 @@ nav ul li a:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     overflow-y: hidden;
-    height: 380px;
+    height: 360px;
   }
   .piePagina {
     -ms-grid-row: 5;
@@ -655,8 +657,12 @@ nav ul li a:hover {
     font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   }
   .barraNavegacion {
-    display: block;
-    padding: 0.5rem 1rem;
+    height: 64px;
+    padding-top: 0;
+    padding-top: 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .textoPromo {
     display: -webkit-box;
@@ -974,6 +980,12 @@ nav ul li a:hover {
 }
 
 @media only screen and (min-width: 1024px) {
+  .encabezado {
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+    text-align: left;
+    height: 90px;
+  }
   .gridPadre {
     display: -ms-grid;
     display: grid;
@@ -1132,11 +1144,11 @@ nav ul li a:hover {
   .gridPaquete {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "contacto contacto contacto contacto" "encabezado barraNavegacion barraNavegacion barraNavegacion" "main main main main" "footer footer footer footer";
+        grid-template-areas: "contacto contacto contacto contacto" "header barraNavegacion barraNavegacion barraNavegacion" "main main main main" "footer footer footer footer";
+    -ms-grid-rows: 20px 0.1fr 0.9fr 0.1fr;
+        grid-template-rows: 20px 0.1fr 0.9fr 0.1fr;
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
-    -ms-grid-rows: 20px 0.9fr 600px 0.6fr;
-        grid-template-rows: 20px 0.9fr 600px 0.6fr;
   }
   .barraDer {
     -ms-grid-row: 1;
@@ -1159,7 +1171,7 @@ nav ul li a:hover {
   .encabezado {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
-    grid-area: encabezado;
+    grid-area: header;
     display: flex-start;
   }
   .barraNavegacion {
