@@ -359,6 +359,9 @@ body {
   .parrafo {
     margin-bottom: 10px;
   }
+  .mendoza {
+    margin-bottom: 2em;
+  }
   .socialMedia {
     margin-top: 1em;
     margin-bottom: 8px;
@@ -514,8 +517,8 @@ body {
     display: grid;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 0.3fr 0.9fr 0.9fr 0.9fr 0.9fr;
-        grid-template-rows: 0.3fr 0.9fr 0.9fr 0.9fr 0.9fr;
+    -ms-grid-rows: 0.4fr 0.9fr 0.9fr 0.9fr 0.9fr;
+        grid-template-rows: 0.4fr 0.9fr 0.9fr 0.9fr 0.9fr;
     gap: 0px 0px;
         grid-template-areas: "title " "promo"  "promo1" "promo2" "promo3";
   }
@@ -537,7 +540,6 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     overflow-y: hidden;
-    height: 360px;
   }
   .promo1 {
     -ms-grid-row: 3;
@@ -548,7 +550,6 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     overflow-y: hidden;
-    height: 360px;
   }
   .promo2 {
     -ms-grid-row: 4;
@@ -559,7 +560,6 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     overflow-y: hidden;
-    height: 360px;
   }
   .promo3 {
     -ms-grid-row: 5;
@@ -570,7 +570,6 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     overflow-y: hidden;
-    height: 360px;
   }
   .piePagina {
     -ms-grid-row: 5;
@@ -980,7 +979,7 @@ body {
     display: inline-block;
     overflow-y: hidden;
   }
-  .tituloContenido {
+  .tituloPromociones {
     font-family: "Zen Kurenaido", sans-serif;
     text-align: center;
     font-style: italic;
@@ -1101,12 +1100,12 @@ body {
     gap: 0px 0px;
         grid-template-areas: "title title title title" "promo promo promo1 promo1" "promo2 promo2 promo3 promo3";
   }
-  .gridPadre .tituloContenido {
+  .gridPadre .tituloPromociones {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
     grid-area: title;
-    padding: 20px;
+    padding: 10px 20px 20px 20px;
   }
   .gridPadre .promo {
     -ms-grid-row: 2;
@@ -1159,7 +1158,7 @@ body {
             flex-direction: row;
     padding-left: 5em;
     padding-top: 1em;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
     font-family: "Zen Kurenaido", sans-serif;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -1180,6 +1179,7 @@ body {
     font-family: "Zen Kurenaido", sans-serif;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    padding-bottom: 2em;
   }
   .gridPadre .piePagina {
     -ms-grid-row: 4;
@@ -1256,12 +1256,12 @@ body {
     gap: 0px 0px;
         grid-template-areas: "title title title title" "promo promo promo1 promo1" "promo2 promo2 promo3 promo3";
   }
-  .tituloContenido {
+  .tituloPromociones {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
     grid-area: title;
-    padding: 20px;
+    padding: 10px 20px 20px 20px;
   }
   .promo {
     -ms-grid-row: 2;
@@ -1313,7 +1313,7 @@ body {
             flex-direction: row;
     padding-left: 5em;
     padding-top: 1em;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
     font-family: "Zen Kurenaido", sans-serif;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -1334,6 +1334,7 @@ body {
     font-family: "Zen Kurenaido", sans-serif;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    padding-bottom: 2em;
   }
   .piePagina {
     -ms-grid-row: 4;
