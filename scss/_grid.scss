@@ -128,10 +128,6 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
         margin-bottom: 10px;
     }
 
-    .mendoza{
-        margin-bottom: 2em;
-    }
-
     .socialMedia{
         margin-top: 1em;
         margin-bottom: 8px;
@@ -323,219 +319,526 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
     .barraDer{
         font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     }
+
+    .marca{
+        font-family: $letraPrincipal;
+        font-size: 20px;
+        font-weight: bold; 
+        color:$colorLetra;
+        overflow-y: hidden;
+    }   
+
+    header a {
+        text-decoration: none;
+    }
     
-    .barraNavegacion{
-        height: 64px;
-        padding-top: 0;
-        // text-align: center;
-        padding-top: 10px;
+    #imagenMarca{
+        margin-left: 3em;
+    }
+    
+    .marcaLogo{
         justify-content: center;
     }
     
-    .textoPromo{
-        // margin-left: 2em;
-        // margin-bottom: 1.5em;
-        // margin-top: 1em;
-        display: flex;
+    .encabezado, .barraNavegacion, .piePagina{
+        background: $colorPimario;
+        overflow-y: hidden;
+    }
+    
+    .encabezado{
+        width: 100%;
+        padding: 10px 0px 10px 10px;
+        text-align: left;
+        height: 100px;
+    }
+
+    .barraNavegacion{
+        height: 100px;
+        padding-top: 2em;
+        padding-bottom: 1.6em;
+    }
+
+    
+    // .barraNavegacion{
+    //     height: 95px;
+    //     padding-top: 1.6em;
+    //     padding-bottom: 1.6em;
+    // }
+    
+    nav {
+        list-style-type:none;
+        text-align:center;
+        text-transform: uppercase;
+        font-family: $letraPrincipal;
+    } 
+    
+    nav li {
+        float: left;
+    }
+    
+    nav ul li{ 
+        display: inline-block;
+        padding-left: 16px;
+        padding-right: 16px; 
+        font-weight: bold; 
+        letter-spacing: 10px; 
+        text-decoration: none;
+        list-style-type: none;
+        // box-sizing: border-box;
+    } 
+    
+    nav ul li a {
+        text-decoration: none;
+        color: white; 
+    }
+    
+    nav ul li a:hover {
+        color: #0771db; 
+    }
+
+    .socialMedia{
+        margin-top: 1em;
+        margin-bottom: 8px;
+    }
+    
+    .follow{
         text-align: center;
+        // padding-bottom: 4em;
+        width: 160px;
+        height: 38px;
+        display: inline-block;
+        overflow-y: hidden;
+    }
+    
+    .tituloPromociones{
+        // padding: 5px;
+        font-family: $tituloMain;
+        text-align: center;
+        font-style: italic;
+        overflow-y: hidden;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+    
+    .promo, .promo1, .promo2, .promo3{
+        font-family: 'Zen Kurenaido', sans-serif;
+        // box-sizing: border-box;
+    }
+    
+    .fotoProv{
+        // padding-left: 5em;
+        overflow-y: hidden;
+        padding-left: 1em;
+    }
+    
+    .prov1{
+        padding-bottom: 2em;
+    }
+    
+    .parrafo{
+        padding-top: 10px;
+    }
+    
+    .textoPromo, .textoPromo2{
+        display: flex;
+        justify-content: center;	
+        padding: 10px;
+        box-sizing: border-box;
+        width: 250px;
+        font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        line-height: 1.5em;
+    }
+    
+    .textoPromo1, .textoPromo3{
+        display: flex;
+        justify-content: center;	
+        padding-left: 50px;
+        padding-top: 10px;
+        // box-sizing: border-box;
+        width: 250px;
+        font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        line-height: 1.5em;
+    }
+    
+    .piePagina{
+        height: 70px;
     }
 
     // index
-    .gridPadre{
-		display: $grid;
-		grid-template-areas:
-        "contacto contacto contacto contacto"
-        "encabezado barraNavegacion barraNavegacion barraNavegacion"
-        "main main main main"
-        "footer footer footer footer"; 
-		grid-template-rows: 19px 0.1fr 0.9fr 0.1fr; 
-		grid-template-columns: repeat(4, 1fr); 
-		.barraDer{
-            grid-area: contacto;
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-            column-gap: 8px;
-        }
-        
-        .encabezado{
-            grid-area: encabezado;
-            justify-content: flex-start;
-        }
-        
-        .barraNavegacion{
-            grid-area: barraNavegacion;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        }
-        
-        .mainContainer {
-            grid-area: main;
-            display: grid;
-            grid-template-columns: 0.2fr 0.5fr 0.5fr 0.5fr;
-            grid-template-rows: 0.3fr 1fr 1fr;
-            gap: 0px 0px;
-            grid-template-areas:
-              "title title title title"
-              "promo promo promo1 promo1"
-              "promo2 promo2 promo3 promo3";
-        }
-        
-        .tituloContenido {
-            grid-area: title;
-            padding: 20px;
-        }
-        
-        .promo {
-            grid-area: promo;
-            display: flex;
-            flex-direction: row;
-            padding-left: 5em;
-            padding-top: 1em;
-            padding-bottom: 1em;
-            box-sizing: border-box;
-            font-family: $tituloMain;
-	        box-sizing: border-box;
-        }
-        
-        .promo1 {
-            grid-area: promo1;
-            display: flex;
-            flex-direction: row;
-            padding: 20px;
-            font-family: $tituloMain;
-            box-sizing: border-box;
-        }
-        
-        .promo2 {
-            grid-area: promo2;
-            display: flex;
-            flex-direction: row;
-            padding-left: 5em;
-            padding-top: 1em;
-            padding-bottom: 1em;
-            font-family: $tituloMain;
-            box-sizing: border-box;
-        }
-        
-        .promo3 {
-            grid-area: promo3;
-            display: flex;
-            flex-direction: row;
-            padding: 20px;
-            font-family: $tituloMain;
-            box-sizing: border-box;
-        }
-        
-        .piePagina{
-            grid-area: footer;
-            text-align: center;
-            padding-top: 6px;
-            padding-bottom: 6px;
-            font-family: $letraPrincipal;
-            color: $colorLetra; 
-        }
+    .gridPadre {
+        display: $grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 100%; 
+        grid-template-rows: 30px 90px 90px 1650px 70px; 
+        grid-template-areas: 
+        "contacto"
+        "header" 
+        "nav"
+        "main"
+        "footer"; 
+    }
+    
+    .barraDer{
+        grid-area: contacto;
+        letter-spacing: 3px;
     }
 
-    // page paquete
-    .gridPaquete{	
-		display: $grid; 
-		grid-template-areas: 
-		"contacto contacto contacto contacto"
-        "encabezado barraNavegacion barraNavegacion barraNavegacion"
-        "main main main main"
-        "footer footer footer footer";
-        grid-template-columns: repeat(4, 1fr); 
-		grid-template-rows: 20px 0.9fr 600px 0.6fr;
-  	}
-	
-	.barraDer{
-		grid-area: contacto;
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-end;
-		column-gap: 8px;
-	}
-	
-	.encabezado{
-		grid-area: encabezado;
-		display: flex-start;
-	}
-	
-	.barraNavegacion{
-		grid-area: barraNavegacion;
-		display: flex;
-		justify-content: flex-start;
-        flex-direction: row;
-	}
-	
-	.mainPaquete{
-		grid-area: main;
-		display: grid;
-		grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
-		grid-template-rows: 0.3fr 1fr 1fr;
-		gap: 0px 0px;
-		grid-template-areas:
-		 "title title title title"
-		 "promo promo promo1 promo1"
-		 "promo2 promo2 promo3 promo3";
-	}
-	
-	.tituloContenido {
-		grid-area: title;
-		padding: 20px;
-	}
-	
-	.promo {
-		grid-area: promo;
-		display: flex;
-		flex-direction: row;
-		padding-left: 5em;
-		padding-top: 1em;
-		padding-bottom: 1em;
-        font-family: $tituloMain;
-        box-sizing: border-box;
-	}
-	
-	.promo1 {
-		grid-area: promo1;
-		display: flex;
-		flex-direction: row;
-		padding: 20px;
-        font-family: $tituloMain;
-        box-sizing: border-box;
-	}
-	
-	.promo2 {
-		grid-area: promo2;
-		display: flex;
-		flex-direction: row;
-		padding-left: 5em;
-        padding-top: 1em;
-        padding-bottom: 1em;
-        font-family: $tituloMain;
-        box-sizing: border-box;
-	}
-	
-	.promo3 {
-		grid-area: promo3;
-		display: flex;
-		flex-direction: row;
-		padding: 20px;
-        font-family: $tituloMain;
-        box-sizing: border-box;
-	}
+    .encabezado{
+        grid-area: header;
+        width: auto;
+        line-height: normal;
+        padding: 0px;
+    }
 
-	.piePagina{
-		grid-area: footer;
-		text-align: center;
-        padding-top: 6px;
-        padding-bottom: 6px;
-		font-family: $letraPrincipal;
-		color: $colorLetra;
-	}
+    .barraNavegacion{
+        grid-area: nav;
+        padding-left: 1em;
+    }   
+    
+    .mainContainer {
+        grid-area: main;
+        display: $grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 0.4fr 0.7fr 0.7fr 0.7fr 0.7fr;
+        gap: 0px 0px;
+        grid-template-areas:
+        "title "
+        "promo" 
+        "promo1"
+        "promo2"
+        "promo3";
+    }
+    
+    .tituloContenido {
+        grid-area: title;
+        justify-content: center;
+    }
+    
+    .promo {
+        grid-area: promo;
+        flex-direction: column;
+        overflow-y: hidden;
+        font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        line-height: 1.5em;
+    }
+    
+    .promo1 {
+        grid-area: promo1;
+        flex-direction: column;
+        overflow-y: hidden;
+        font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        line-height: 1.5em;
+    }
+    
+    .promo2 {
+        grid-area: promo2;
+        flex-direction: column;
+        overflow-y: hidden;
+        font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        line-height: 1.5em;
+    }
+    
+    .promo3 {
+        grid-area: promo3;
+        flex-direction: column;
+        overflow-y: hidden;
+        font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        line-height: 1.5em;
+    }
+    
+    .piePagina{
+        grid-area: footer;
+        text-align: center;
+        font-family: 'Permanent Marker', cursive; /*letra extraida de google fonts*/
+        color: white;
+        height: 70px;
+    }   
+
+    // page paquete
+    .gridPaquete{
+        display: $grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 100%; 
+        grid-template-rows: 30px 90px 90px 1650px 70px; 
+        grid-template-areas: 
+        "contacto"
+        "header" 
+        "nav"
+        "main"
+        "footer"; 
+    }
+
+    .barraDer{
+        grid-area: contacto;
+        letter-spacing: 3px;
+    }
+
+    .encabezado{
+        grid-area: header;
+        width: auto;
+        line-height: normal;
+        padding: 0px;
+    }
+
+    .barraNavegacion{
+        grid-area: nav;
+    }   
+
+    .mainPaquete {
+        grid-area: main;
+        display: $grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 0.4fr 0.9fr 0.9fr 0.9fr 0.9fr;
+        gap: 0px 0px;
+        grid-template-areas:
+        "title "
+        "promo" 
+        "promo1"
+        "promo2"
+        "promo3";
+    }
+    
+    .tituloContenido {
+        grid-area: title;
+        justify-content: center;
+        margin-top: 1em;
+    }
+    
+    .promo {
+        grid-area: promo;
+        flex-direction: column;
+        overflow-y: hidden;
+    }
+    
+    .promo1 {
+        grid-area: promo1;
+        flex-direction: column;
+        overflow-y: hidden;
+    }
+    
+    .promo2 {
+        grid-area: promo2;
+        flex-direction: column;
+        overflow-y: hidden;
+    }
+    
+    .promo3 {
+        grid-area: promo3;
+        flex-direction: column;
+        overflow-y: hidden;
+    }
+    
+    .piePagina{
+        grid-area: footer;
+        text-align: center;
+        font-family: 'Permanent Marker', cursive; /*letra extraida de google fonts*/
+        color: white;
+        height: 60px;
+    }
 }
+
+   
+
+//     // index
+//     .gridPadre{
+// 		display: $grid;
+// 		grid-template-areas:
+//         "contacto contacto contacto contacto"
+//         "encabezado barraNavegacion barraNavegacion barraNavegacion"
+//         "main main main main"
+//         "footer footer footer footer"; 
+// 		grid-template-rows: 20px 0.1fr 1fr 0.1fr; 
+// 		grid-template-columns: repeat(4, 1fr); 
+// 		.barraDer{
+//             grid-area: contacto;
+//             display: flex;
+//             flex-direction: row;
+//             justify-content: flex-end;
+//             column-gap: 8px;
+//         }
+        
+//         .encabezado{
+//             grid-area: encabezado;
+//             justify-content: flex-start;
+//         }
+        
+//         .barraNavegacion{
+//             grid-area: barraNavegacion;
+//             display: flex;
+//             flex-direction: row;
+//             justify-content: flex-start;
+//             padding-left: 3em;
+//         }
+        
+//         .mainContainer {
+//             grid-area: main;
+//             display: grid;
+//             grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+//             grid-template-rows: 0.3fr 1fr 1fr;
+//             gap: 0px 0px;
+//             grid-template-areas:
+//               "title title title title"
+//               "promo promo promo1 promo1"
+//               "promo2 promo2 promo3 promo3";
+//         }
+        
+//         .tituloPromociones {
+//             grid-area: title;
+//             padding: 10px 20px 20px 20px;
+//         }
+        
+//         .promo {
+//             grid-area: promo;
+//             display: flex;
+//             flex-direction: row;
+//             padding-left: 1em;
+//             padding-top: 1em;
+//             padding-bottom: 1em;
+//             box-sizing: border-box;
+//             font-family: $tituloMain;
+// 	        box-sizing: border-box;
+//         }
+        
+//         .promo1 {
+//             grid-area: promo1;
+//             display: flex;
+//             flex-direction: row;
+//             padding: 20px;
+//             font-family: $tituloMain;
+//             box-sizing: border-box;
+//         }
+        
+//         .promo2 {
+//             grid-area: promo2;
+//             display: flex;
+//             flex-direction: row;
+//             padding-left: 5em;
+//             padding-top: 1em;
+//             padding-bottom: 2em;
+//             font-family: $tituloMain;
+//             box-sizing: border-box;
+//         }
+        
+//         .promo3 {
+//             grid-area: promo3;
+//             display: flex;
+//             flex-direction: row;
+//             padding: 20px;
+//             font-family: $tituloMain;
+//             box-sizing: border-box;
+//             padding-bottom: 2em;
+//         }
+        
+//         .piePagina{
+//             grid-area: footer;
+//             text-align: center;
+//             padding-top: 3px;
+//             padding-bottom: 3px;
+//             font-family: $letraPrincipal;
+//             color: $colorLetra; 
+//         }
+//     }
+
+//     // page paquete
+//     .gridPaquete{	
+// 		display: $grid;
+// 		grid-template-areas:
+//         "contacto contacto contacto contacto"
+//         "header barraNavegacion barraNavegacion barraNavegacion"
+//         "main main main main"
+//         "footer footer footer footer"; 
+// 		grid-template-rows: 20px 0.1fr 0.9fr 0.1fr; 
+// 		grid-template-columns: repeat(4, 1fr); 
+//   	}
+	
+// 	.barraDer{
+// 		grid-area: contacto;
+// 		display: flex;
+// 		flex-direction: row;
+// 		justify-content: flex-end;
+// 		column-gap: 8px;
+// 	}
+	
+// 	.encabezado{
+// 		grid-area: header;
+// 		display: flex-start;
+// 	}
+	
+// 	.barraNavegacion{
+// 		grid-area: barraNavegacion;
+// 		display: flex;
+// 		justify-content: flex-start;
+//         flex-direction: row;
+//         padding-left: 3em;
+// 	}
+	
+// 	.mainPaquete{
+// 		grid-area: main;
+// 		display: grid;
+// 		grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+// 		grid-template-rows: 0.3fr 1fr 1fr;
+// 		gap: 0px 0px;
+// 		grid-template-areas:
+// 		 "title title title title"
+// 		 "promo promo promo1 promo1"
+// 		 "promo2 promo2 promo3 promo3";
+// 	}
+	
+// 	.tituloPromociones {
+// 		grid-area: title;
+//         padding: 10px 20px 20px 20px;
+// 	}
+	
+// 	.promo {
+// 		grid-area: promo;
+// 		display: flex;
+// 		flex-direction: row;
+// 		padding-left: 5em;
+// 		padding-top: 1em;
+// 		padding-bottom: 1em;
+//         font-family: $tituloMain;
+//         box-sizing: border-box;
+// 	}
+	
+// 	.promo1 {
+// 		grid-area: promo1;
+// 		display: flex;
+// 		flex-direction: row;
+// 		padding: 20px;
+//         font-family: $tituloMain;
+//         box-sizing: border-box;
+// 	}
+	
+// 	.promo2 {
+// 		grid-area: promo2;
+// 		display: flex;
+// 		flex-direction: row;
+// 		padding-left: 5em;
+//         padding-top: 1em;
+//         padding-bottom: 2em;
+//         font-family: $tituloMain;
+//         box-sizing: border-box;
+// 	}
+	
+// 	.promo3 {
+// 		grid-area: promo3;
+// 		display: flex;
+// 		flex-direction: row;
+// 		padding: 20px;
+//         font-family: $tituloMain;
+//         box-sizing: border-box;
+//         padding-bottom: 2em;
+// 	}
+
+// 	.piePagina{
+// 		grid-area: footer;
+// 		text-align: center;
+//         padding-top: 6px;
+//         padding-bottom: 6px;
+// 		font-family: $letraPrincipal;
+// 		color: $colorLetra;
+// 	}
+// }
 
 @media only screen and (min-width: 1024px){
 
