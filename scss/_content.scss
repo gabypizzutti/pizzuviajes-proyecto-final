@@ -112,9 +112,9 @@ body{
 	text-align: start;
 }
 
-.typeDocument{
-	margin-left: 2em;
-}
+// .typeDocument{
+// 	margin-left: 1em;
+// }
 
 .titleThanks{
 	font-family: 'Zen Kurenaido', sans-serif;
@@ -126,6 +126,12 @@ body{
 // page datos del pax, checkout pagos
 .pais, .cuotas, .type{
 	text-align: map-get($estilos , centro );
+}
+
+// page checkout
+.formPay{
+	display: flex;
+	flex-direction: column;
 }
 
 // extend
