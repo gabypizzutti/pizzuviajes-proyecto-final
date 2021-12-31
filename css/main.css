@@ -190,10 +190,6 @@ body {
   text-align: start;
 }
 
-.typeDocument {
-  margin-left: 2em;
-}
-
 .titleThanks {
   font-family: 'Zen Kurenaido', sans-serif;
   margin-bottom: 0px;
@@ -203,6 +199,16 @@ body {
 
 .pais, .cuotas, .type {
   text-align: center;
+}
+
+.formPay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .boton-base, .boton-continue, .boton-volverAtras, .boton-confirmarPago, .boton-volverHome {
