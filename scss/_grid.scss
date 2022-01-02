@@ -380,7 +380,6 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
         letter-spacing: 10px; 
         text-decoration: none;
         list-style-type: none;
-        // box-sizing: border-box;
     } 
     
     nav ul li a {
@@ -399,7 +398,6 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
     
     .follow{
         text-align: center;
-        // padding-bottom: 4em;
         width: 160px;
         height: 38px;
         display: inline-block;
@@ -407,7 +405,6 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
     }
     
     .tituloContenido{
-        // padding: 5px;
         font-family: $tituloMain;
         text-align: center;
         font-style: italic;
@@ -422,7 +419,6 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
     }
     
     .fotoProv{
-        // padding-left: 5em;
         overflow-y: hidden;
         padding-left: 1em;
     }
@@ -433,7 +429,6 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
         justify-content: center;	
         padding: 10px;
         box-sizing: border-box;
-        // width: 250px;
         font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
         line-height: 1.5em;
     }
@@ -442,10 +437,7 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
         display: flex;
         flex-direction: row;
         justify-content: center;	
-        // padding-left: 50px;
         padding-top: 10px;
-        // box-sizing: border-box;
-        // width: 250px;
         font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
         line-height: 1.5em;
     }
@@ -506,7 +498,6 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
     
     .promo {
         grid-area: promo;
-        // flex-direction: column;
         overflow-y: hidden;
         font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
         line-height: 1.5em;
@@ -517,7 +508,6 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
     
     .promo1 {
         grid-area: promo1;
-        // flex-direction: column;
         overflow-y: hidden;
         font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
         line-height: 1.5em;
@@ -528,7 +518,6 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
     
     .promo2 {
         grid-area: promo2;
-        // flex-direction: column;
         overflow-y: hidden;
         font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
         line-height: 1.5em;
@@ -539,7 +528,6 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
     
     .promo3 {
         grid-area: promo3;
-        // flex-direction: column;
         overflow-y: hidden;
         font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
         line-height: 1.5em;
@@ -669,7 +657,6 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
     }
     
     .encabezado, .barraNavegacion, .piePagina{
-        // box-sizing: border-box; 
         background: $colorPimario;
         overflow-y: hidden;
     }
@@ -699,7 +686,6 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
         letter-spacing: 10px; 
         text-decoration: none;
         list-style-type: none;
-        // box-sizing: border-box;
     } 
     
     nav ul li a {
@@ -718,7 +704,6 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
     
     .follow{
         text-align: center;
-        // padding-bottom: 4em;
         width: 160px;
         height: 38px;
         display: inline-block;
@@ -726,7 +711,6 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
     }
     
     .tituloPromociones{
-        // padding: 5px;
         font-family: $tituloMain;
         text-align: center;
         font-style: italic;
@@ -738,7 +722,6 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
     .promo, .promo1, .promo2, .promo3{
         font-family: 'Zen Kurenaido', sans-serif;
         overflow-y: hidden;
-        // box-sizing: border-box;
     }
     
     .fotoProv{
@@ -769,7 +752,6 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
         justify-content: center;	
         padding-left: 5px;
         padding-top: 10px;
-        // box-sizing: border-box;
         width: 250px;
         font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
         line-height: 1.5em;
