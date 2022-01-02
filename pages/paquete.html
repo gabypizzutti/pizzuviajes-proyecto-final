@@ -4,25 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Nombre de la web e icono -->
+    <!-- Nombre de la web e icono -->
     <title>Paquete Pizzu Viajes</title>
     <link rel="icon" href="../assets/world.jpg" alt="logo">
     <!-- meta description -->
     <meta name="description" content="Pizzu Viajes, la agencia de viajes con precios accesibles para que puedas concretar tu viaje soñado">
     <!-- meta keywords -->
-    <meta name="keywords" content="agencia de viajes, vuelo, hotel, paquete, auto, alquiler de auto, reserva de hotel, compra de vuelo, compra de paquete">
-     <!-- mi css animate -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-     <!-- aos -->
-     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  
+    <meta name="keywords" content="agencia de viajes, vuelo, hotel, paquete, reserva de hotel, compra de vuelo, reserva de vuelo, compra de paquete, reserva de paquete">
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Kurale&family=Pacifico&family=Permanent+Marker&family=Raleway:ital,wght@0,100;1,100;1,200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kurale&family=Pacifico&family=Permanent+Marker&family=Raleway:ital,wght@0,100;1,100;1,200&family=Zen+Kurenaido&display=swap" rel="stylesheet">
     <!-- mi css -->
     <link rel="stylesheet" type="text/css" href="../css/main.css">
-<!-- fin del nombre de la web e icono -->
 </head>
-<body> <!--header, nombre y logo -->
+<!-- body -->
+<body> 
+    <!-- grid padre -->
     <div class="gridPaquete">
         <div class="contacto barraDer">
             <span class="item">
@@ -44,12 +43,13 @@
         </div>
         <!-- header -->
         <header class="encabezado">
-            <a class="botonIndex marcaLogo animate__animated animate__heartBeat" href="../index.html">
+            <a class="botonIndex marcaLogo" href="../index.html">
                 <img class="logo" id="imagenMarca" src="../assets/globo.svg" alt="logo pizzu viajes" title="pizzu viajes">
                 <h1 class="marca">PIZZU VIAJES</h1>
             </a>
+        <!-- fin header -->
         </header>    
-    <!-- nav -->
+        <!-- nav -->
         <nav class="barraNavegacion">
             <ul>
                 <li><a href="vuelo.html"><img class="imagen"  src="../assets/plane-solid.svg" alt="avion">VUELO</a></li>                  
@@ -59,56 +59,66 @@
             </ul> 
         <!-- cierre nav -->
         </nav>
-<!-- inicio de main -->
+        <!-- inicio de main , grid main-->
         <main class="mainPaquete">
-                 <div class="tituloPromociones">
-                     <h2 class="tituloContenido">Estas recomendaciones de paquetes son para vos...</h2>
+                <div class="tituloPromociones">
+                    <h2 class="tituloContenido">Estas recomendaciones de paquetes son para vos...</h2>
                 </div>
                 <div class="promo">
-                    <div class="textoPromo">
-                        <p class="parrafo">Paquete a Mendoza de 6 noches, con vuelo directo , hotel a eleccion con desayuno , categoria 3 estrellas , con asistencia incluida.</p>
+                    <div class="textoPromo" data-aos="flip-up" data-aos-delay="400" data-aos-duration="4000">
+                        <p class="parrafo">Paquete a Mendoza de 6 noches, con vuelo directo , hotel a elección con desayuno , categoría 3 estrellas, 
+                            con asistencia incluída.</p>
                     </div>
                     <div class="imagenPromo fotoProv">
-                        <img class="provincia" src="../assets/mendoza.png" alt="mendoza">
+                        <img class="provincia" data-aos="flip-down" data-aos-delay="400" data-aos-duration="4000" src="../assets/mendoza.png" alt="mendoza">
                     </div> 
                 </div>
                 <div class="promo1">
-                    <div class="textoPromo1">
-                        <p class="parrafo">Paquete a Calafate de 6 dias 5 noches, con vuelo directo , hotel a eleccion con desayuno , categoria 4 estrellas , con asistencia incluida.</p>
+                    <div class="textoPromo1" data-aos="flip-up" data-aos-delay="400" data-aos-duration="4000">
+                        <p class="parrafo">Paquete a Calafate de 6 días 5 noches, con vuelo directo , hotel a elección con desayuno , categoría 4 estrellas, 
+                            con asistencia incluída.</p>
                     </div>
                     <div class="imagenPromo fotoProv">
-                        <img class="provincia" src="../assets/calafate.png" alt="calafate">
+                        <img class="provincia" data-aos="flip-down" data-aos-delay="400" data-aos-duration="4000" src="../assets/calafate.png" alt="calafate">
                     </div>   
                 </div>
                 <div class="promo2">
-                    <div class="textoPromo2">
-                        <p class="parrafo">Paquete a Jujuy de 5 dias , 4 noches con vuelo directo , hotel a eleccion con desayuno , categoria 3 estrellas , con asistencia incluida.</p>
+                    <div class="textoPromo2" data-aos="flip-up" data-aos-delay="400"data-aos-duration="4000">
+                        <p class="parrafo">Paquete a Jujuy de 5 días , 4 noches con vuelo directo , hotel a elección con desayuno , categoría 3 estrellas, 
+                            con asistencia incluída.</p>
                     </div>
                     <div class="imagenPromo fotoProv prov1">
-                        <img class="provincia" src="../assets/jujuy.png" alt="jujuy">
+                        <img class="provincia" data-aos="flip-down" data-aos-delay="400" data-aos-duration="4000" src="../assets/jujuy.png" alt="jujuy">
                     </div>
                 </div>    
                 <div class="promo3"> 
-                    <div class="textoPromo3">
-                        <p class="parrafo">Paquete a Cataratas, 4 dias 3 noches , con tres elecciones de hotel , para 2 personas , incluye el vuelo y puedes adicionar la asistencia.</p>
+                    <div class="textoPromo3" data-aos="flip-up" data-aos-delay="400"data-aos-duration="4000">
+                        <p class="parrafo">Paquete a Cataratas, 4 días 3 noches , con tres elecciones de hotel , para 2 personas , incluye el vuelo y puedes adicionar la asistencia.</p>
                     </div>
                     <div class="imagenPromo fotoProv prov1">
-                        <img class="provincia" src="../assets/iguazu.png" alt="cataratas">
+                        <img class="provincia" data-aos="flip-down" data-aos-delay="400" data-aos-duration="4000" src="../assets/iguazu.png" alt="cataratas">
                     </div>
                 </div>
+            <!--  cierre main -->
         </main>    
-     <!--inicio Footer y img redes sociales-->
-     <footer class="piePagina">
-        <span class="follow">Seguinos en redes:</span> 
-            <img class="redes socialMedia" src="../assets/icono-ig.png" alt="logo instagram" title="instagram">
-            <img class="redes socialMedia" src="../assets/icono-face.png" alt="logo facebook" title="facebook">
-            <img class="redes socialMedia" src="../assets/twit-icon.png" alt="logo twitter" title="twitter">
-     </footer>  
-     <!-- cierre footer -->
+        <!--inicio Footer y img redes sociales-->
+        <footer class="piePagina">
+            <span class="follow">Seguinos en redes:</span> 
+                <img class="redes socialMedia" src="../assets/icono-ig.png" alt="logo instagram" title="instagram">
+                <img class="redes socialMedia" src="../assets/icono-face.png" alt="logo facebook" title="facebook">
+                <img class="redes socialMedia" src="../assets/twit-icon.png" alt="logo twitter" title="twitter">
+        </footer>  
+        <!-- cierre footer -->
     </div>
     <!-- fin grid padre -->
-     <!-- para sacar la marca de agua de hostinger -->
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><script>$(document).ready(function(){$("a[title|='Hosted on free web hosting 000webhost.com. Host your own website for FREE.']").css("display", "none");$("img[alt|='www.000webhost.com']").css("display", "none");});</script>
-     <!-- fin -->
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>   
+    <script>
+        AOS.init();
+    </script>
+    <!-- fin aos -->
+    <!-- para sacar la marca de agua de hostinger -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><script>$(document).ready(function(){$("a[title|='Hosted on free web hosting 000webhost.com. Host your own website for FREE.']").css("display", "none");$("img[alt|='www.000webhost.com']").css("display", "none");});</script>
+    <!-- fin -->
 </body>
 </html>
