@@ -201,6 +201,11 @@ body {
   text-align: center;
 }
 
+.eleccionSexo {
+  padding-left: 6em;
+  text-align: left;
+}
+
 .formPay {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1437,6 +1442,10 @@ body {
   }
   .typeDocument {
     margin-left: 1rem;
+  }
+  .eleccionSexo {
+    text-align: left;
+    padding-left: 0;
   }
   .dateTc {
     text-align: start;
