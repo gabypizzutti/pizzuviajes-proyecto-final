@@ -188,6 +188,8 @@ body {
 
 .accept {
   text-align: start;
+  padding-left: 8em;
+  padding-top: 1em;
 }
 
 .titleThanks {
@@ -1445,6 +1447,10 @@ body {
   }
   .eleccionSexo {
     text-align: left;
+    padding-left: 0;
+  }
+  .accept {
+    text-align: start;
     padding-left: 0;
   }
   .dateTc {
