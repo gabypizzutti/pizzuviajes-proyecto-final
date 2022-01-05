@@ -402,12 +402,16 @@ body {
         grid-template-areas: "contacto" "header"  "nav" "main" "footer";
   }
   .barraDer {
+    grid-row: 1;
+    grid-column: 1;
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: contacto;
     letter-spacing: 3px;
   }
   .encabezado {
+    grid-row: 2;
+    grid-column: 1;
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: header;
@@ -416,12 +420,16 @@ body {
     padding: 0px;
   }
   .barraNavegacion {
+    grid-row: 3;
+    grid-column: 1;
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: nav;
     padding-left: 1em;
   }
   .mainContainer {
+    grid-row: 4;
+    grid-column: 1;
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     grid-area: main;
@@ -433,6 +441,8 @@ body {
         grid-template-areas: "title " "promo"  "promo1" "promo2" "promo3";
   }
   .tituloContenido {
+    grid-row: 1;
+    grid-column: 1;
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: title;
@@ -441,6 +451,8 @@ body {
             justify-content: center;
   }
   .promo {
+    grid-row: 2;
+    grid-column: 1;
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: promo;
@@ -453,6 +465,8 @@ body {
     line-height: 1.5em;
   }
   .promo1 {
+    grid-row: 3;
+    grid-column: 1;
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: promo1;
@@ -465,6 +479,8 @@ body {
     line-height: 1.5em;
   }
   .promo2 {
+    grid-row: 4;
+    grid-column: 1;
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     grid-area: promo2;
@@ -477,6 +493,8 @@ body {
     line-height: 1.5em;
   }
   .promo3 {
+    grid-row: 5;
+    grid-column: 1;
     -ms-grid-row: 5;
     -ms-grid-column: 1;
     grid-area: promo3;
@@ -489,6 +507,8 @@ body {
     line-height: 1.5em;
   }
   .piePagina {
+    grid-row: 5;
+    grid-column: 1;
     -ms-grid-row: 5;
     -ms-grid-column: 1;
     grid-area: footer;
@@ -510,11 +530,19 @@ body {
   }
   .barraDer {
     -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: contacto;
     letter-spacing: 3px;
   }
   .encabezado {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 1;
+    grid-column: 1;
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: header;
@@ -524,10 +552,18 @@ body {
   }
   .barraNavegacion {
     -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: nav;
   }
   .mainPaquete {
+    -ms-grid-row: 4;
+    grid-row: 4;
+    -ms-grid-column: 1;
+    grid-column: 1;
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     grid-area: main;
@@ -542,6 +578,10 @@ body {
   }
   .tituloContenido {
     -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: title;
     -webkit-box-pack: center;
@@ -550,6 +590,10 @@ body {
     margin-top: 1em;
   }
   .promo {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 1;
+    grid-column: 1;
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: promo;
@@ -561,6 +605,10 @@ body {
   }
   .promo1 {
     -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: promo1;
     -webkit-box-orient: vertical;
@@ -570,6 +618,10 @@ body {
     overflow-y: hidden;
   }
   .promo2 {
+    -ms-grid-row: 4;
+    grid-row: 4;
+    -ms-grid-column: 1;
+    grid-column: 1;
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     grid-area: promo2;
@@ -581,6 +633,10 @@ body {
   }
   .promo3 {
     -ms-grid-row: 5;
+    grid-row: 5;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 5;
     -ms-grid-column: 1;
     grid-area: promo3;
     -webkit-box-orient: vertical;
@@ -590,6 +646,10 @@ body {
     overflow-y: hidden;
   }
   .piePagina {
+    -ms-grid-row: 5;
+    grid-row: 5;
+    -ms-grid-column: 1;
+    grid-column: 1;
     -ms-grid-row: 5;
     -ms-grid-column: 1;
     grid-area: footer;
@@ -739,11 +799,15 @@ body {
         grid-template-areas: "contacto" "header"  "nav" "main" "footer";
   }
   .barraDer {
+    grid-row: 1;
+    grid-column: 1;
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: contacto;
   }
   .encabezado {
+    grid-row: 2;
+    grid-column: 1;
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: header;
@@ -752,12 +816,16 @@ body {
     padding: 0px;
   }
   .barraNavegacion {
+    grid-row: 3;
+    grid-column: 1;
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: nav;
     padding-left: 1em;
   }
   .mainContainer {
+    grid-row: 4;
+    grid-column: 1;
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     grid-area: main;
@@ -769,6 +837,8 @@ body {
         grid-template-areas: "title " "promo"  "promo1" "promo2" "promo3";
   }
   .tituloContenido {
+    grid-row: 1;
+    grid-column: 1;
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: title;
@@ -778,6 +848,8 @@ body {
     height: 60px;
   }
   .promo {
+    grid-row: 2;
+    grid-column: 1;
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: promo;
@@ -796,6 +868,8 @@ body {
             justify-content: center;
   }
   .promo1 {
+    grid-row: 3;
+    grid-column: 1;
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: promo1;
@@ -814,6 +888,8 @@ body {
             justify-content: center;
   }
   .promo2 {
+    grid-row: 4;
+    grid-column: 1;
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     grid-area: promo2;
@@ -832,6 +908,8 @@ body {
             justify-content: center;
   }
   .promo3 {
+    grid-row: 5;
+    grid-column: 1;
     -ms-grid-row: 5;
     -ms-grid-column: 1;
     grid-area: promo3;
@@ -850,6 +928,8 @@ body {
             justify-content: center;
   }
   .piePagina {
+    grid-row: 5;
+    grid-column: 1;
     -ms-grid-row: 5;
     -ms-grid-column: 1;
     grid-area: footer;
@@ -871,12 +951,20 @@ body {
   }
   .barraDer {
     -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: contacto;
     letter-spacing: 3px;
     font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   }
   .encabezado {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 1;
+    grid-column: 1;
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: header;
@@ -886,10 +974,18 @@ body {
   }
   .barraNavegacion {
     -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: nav;
   }
   .mainPaquete {
+    -ms-grid-row: 4;
+    grid-row: 4;
+    -ms-grid-column: 1;
+    grid-column: 1;
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     grid-area: main;
@@ -904,6 +1000,10 @@ body {
   }
   .tituloContenido {
     -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: title;
     -webkit-box-pack: center;
@@ -912,6 +1012,10 @@ body {
     margin-top: 1em;
   }
   .promo {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 1;
+    grid-column: 1;
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: promo;
@@ -923,6 +1027,10 @@ body {
   }
   .promo1 {
     -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: promo1;
     -webkit-box-orient: vertical;
@@ -932,6 +1040,10 @@ body {
     overflow-y: hidden;
   }
   .promo2 {
+    -ms-grid-row: 4;
+    grid-row: 4;
+    -ms-grid-column: 1;
+    grid-column: 1;
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     grid-area: promo2;
@@ -943,6 +1055,10 @@ body {
   }
   .promo3 {
     -ms-grid-row: 5;
+    grid-row: 5;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 5;
     -ms-grid-column: 1;
     grid-area: promo3;
     -webkit-box-orient: vertical;
@@ -952,6 +1068,10 @@ body {
     overflow-y: hidden;
   }
   .piePagina {
+    -ms-grid-row: 5;
+    grid-row: 5;
+    -ms-grid-column: 1;
+    grid-column: 1;
     -ms-grid-row: 5;
     -ms-grid-column: 1;
     grid-area: footer;
@@ -1096,10 +1216,12 @@ body {
         grid-template-areas: "contacto contacto contacto contacto" "encabezado barraNavegacion barraNavegacion barraNavegacion" "main main main main" "footer footer footer footer";
     -ms-grid-rows: 20px 0.1fr 1fr 0.1fr;
         grid-template-rows: 20px 0.1fr 1fr 0.1fr;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .gridPadre .barraDer {
+    grid-row: 1;
+    grid-column: 1;
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
@@ -1119,6 +1241,10 @@ body {
   }
   .gridPadre .encabezado {
     -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: encabezado;
     -webkit-box-pack: start;
@@ -1126,6 +1252,8 @@ body {
             justify-content: flex-start;
   }
   .gridPadre .barraNavegacion {
+    grid-row: 3;
+    grid-column: 1;
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     -ms-grid-column-span: 3;
@@ -1143,6 +1271,8 @@ body {
     padding-left: 3em;
   }
   .gridPadre .mainContainer {
+    grid-row: 3;
+    grid-column: 1;
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
@@ -1155,6 +1285,8 @@ body {
         grid-template-areas: "title title title title" "promo promo promo1 promo1" "promo2 promo2 promo3 promo3";
   }
   .gridPadre .tituloPromociones {
+    grid-row: 1;
+    grid-column: 1;
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
@@ -1162,6 +1294,8 @@ body {
     padding: 10px 20px 20px 20px;
   }
   .gridPadre .promo {
+    grid-row: 2;
+    grid-column: 1;
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -1182,6 +1316,8 @@ body {
     overflow-y: hidden;
   }
   .gridPadre .promo1 {
+    grid-row: 2;
+    grid-column: 3;
     -ms-grid-row: 2;
     -ms-grid-column: 3;
     -ms-grid-column-span: 2;
@@ -1200,6 +1336,8 @@ body {
     overflow-y: hidden;
   }
   .gridPadre .promo2 {
+    grid-row: 3;
+    grid-column: 1;
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -1220,6 +1358,8 @@ body {
     overflow-y: hidden;
   }
   .gridPadre .promo3 {
+    grid-row: 3;
+    grid-column: 3;
     -ms-grid-row: 3;
     -ms-grid-column: 3;
     -ms-grid-column-span: 2;
@@ -1239,6 +1379,8 @@ body {
     overflow-y: hidden;
   }
   .gridPadre .piePagina {
+    grid-row: 4;
+    grid-column: 1;
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
@@ -1255,10 +1397,14 @@ body {
         grid-template-areas: "contacto contacto contacto contacto" "header barraNavegacion barraNavegacion barraNavegacion" "main main main main" "footer footer footer footer";
     -ms-grid-rows: 20px 0.1fr 0.9fr 0.1fr;
         grid-template-rows: 20px 0.1fr 0.9fr 0.1fr;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .barraDer {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    grid-column: 1;
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
@@ -1278,11 +1424,19 @@ body {
   }
   .encabezado {
     -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: header;
     display: flex-start;
   }
   .barraNavegacion {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 2;
+    grid-column: 2;
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     -ms-grid-column-span: 3;
@@ -1301,6 +1455,10 @@ body {
   }
   .mainPaquete {
     -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 3;
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
     grid-area: main;
@@ -1315,12 +1473,20 @@ body {
   }
   .tituloPromociones {
     -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
     grid-area: title;
     padding: 10px 20px 20px 20px;
   }
   .promo {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 1;
+    grid-column: 1;
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -1341,6 +1507,10 @@ body {
   }
   .promo1 {
     -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 3;
+    grid-column: 3;
+    -ms-grid-row: 2;
     -ms-grid-column: 3;
     -ms-grid-column-span: 2;
     grid-area: promo1;
@@ -1357,6 +1527,10 @@ body {
             box-sizing: border-box;
   }
   .promo2 {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 1;
+    grid-column: 1;
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -1377,6 +1551,10 @@ body {
   }
   .promo3 {
     -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 3;
+    grid-column: 3;
+    -ms-grid-row: 3;
     -ms-grid-column: 3;
     -ms-grid-column-span: 2;
     grid-area: promo3;
@@ -1394,6 +1572,10 @@ body {
     padding-bottom: 2em;
   }
   .piePagina {
+    -ms-grid-row: 4;
+    grid-row: 4;
+    -ms-grid-column: 1;
+    grid-column: 1;
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;

@@ -156,11 +156,19 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
 	}
 	
 	.barraDer{
+        // lo agregue por un warning en main.css
+        grid-row: 1;
+        grid-column: 1;
+        // fin
 		grid-area: contacto;
         letter-spacing: 3px;
 	}
 
 	.encabezado{
+        // lo agregue por un warning de main.css
+        grid-row: 2;
+        grid-column: 1;
+        // fin
 		grid-area: header;
 		width: auto;
 		line-height: normal;
@@ -168,11 +176,19 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
 	}
 
 	.barraNavegacion{
+        // lo agregue por un warning de main.css
+        grid-row: 3;
+        grid-column: 1;
+        // fin
 		grid-area: nav;
         padding-left: 1em;
 	}	
 	
 	.mainContainer {
+        // lo agregue por un warning de main.css
+        grid-row: 4;
+        grid-column: 1;
+        // fin
 		grid-area: main;
 		display: $grid;
 		grid-template-columns: 100%;
@@ -187,11 +203,19 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
 	}
 	
 	.tituloContenido {
+        // lo agregue por un warning de main.css
+        grid-row: 1;
+        grid-column: 1;
+        // fin
 		grid-area: title;
 		justify-content: center;
 	}
 	
 	.promo {
+        // lo agregue por un warning de main.css
+        grid-row: 2;
+        grid-column: 1;
+        // fin
 		grid-area: promo;
 		flex-direction: column;
         overflow-y: hidden;
@@ -200,6 +224,10 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
     }
 	
 	.promo1 {
+        // lo aregue por un warning de main.css
+        grid-row: 3;
+        grid-column: 1;
+        // fin
 		grid-area: promo1;
 		flex-direction: column;
         overflow-y: hidden;
@@ -208,6 +236,10 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
 	}
 	
 	.promo2 {
+        // lo aregue por un warning de main.css
+        grid-row: 4;
+        grid-column: 1;
+        // fin
 		grid-area: promo2;
 		flex-direction: column;
         overflow-y: hidden;
@@ -216,6 +248,10 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
 	}
 	
 	.promo3 {
+        // lo aregue por un warning de main.css
+        grid-row: 5;
+        grid-column: 1;
+        // fin
 		grid-area: promo3;
 		flex-direction: column;
         overflow-y: hidden;
@@ -224,6 +260,10 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
 	}
 	
 	.piePagina{
+        // lo aregue por un warning de main.css
+        grid-row: 5;
+        grid-column: 1;
+        // fin
 		grid-area: footer;
 		text-align: center;
 		font-family: 'Permanent Marker', cursive; /*letra extraida de google fonts*/
@@ -246,11 +286,19 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
 	}
 
     .barraDer{
+        // lo aregue por un warning de main.css
+        grid-row: 1;
+        grid-column: 1;
+        // fin
         grid-area: contacto;
         letter-spacing: 3px;
     }
 
     .encabezado{
+        // lo aregue por un warning de main.css
+        grid-row: 2;
+        grid-column: 1;
+        // fin
         grid-area: header;
         width: auto;
         line-height: normal;
@@ -258,10 +306,18 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
     }
 
     .barraNavegacion{
+        // lo aregue por un warning de main.css
+        grid-row: 3;
+        grid-column: 1;
+        // fin
         grid-area: nav;
     }	
 
     .mainPaquete {
+        // lo aregue por un warning de main.css
+        grid-row: 4;
+        grid-column: 1;
+        // fin
 		grid-area: main;
 		display: $grid;
 		grid-template-columns: 100%;
@@ -276,36 +332,60 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
 	}
 	
 	.tituloContenido {
+        // lo aregue por un warning de main.css
+        grid-row: 1;
+        grid-column: 1;
+        // fin
 		grid-area: title;
 		justify-content: center;
         margin-top: 1em;
 	}
 	
 	.promo {
+        // lo aregue por un warning de main.css
+        grid-row: 2;
+        grid-column: 1;
+        // fin
 		grid-area: promo;
 		flex-direction: column;
         overflow-y: hidden;
     }
 	
 	.promo1 {
+        // lo aregue por un warning de main.css
+        grid-row: 3;
+        grid-column: 1;
+        // fin
 		grid-area: promo1;
 		flex-direction: column;
         overflow-y: hidden;
 	}
 	
 	.promo2 {
+        // lo aregue por un warning de main.css
+        grid-row: 4;
+        grid-column: 1;
+        // fin
 		grid-area: promo2;
 		flex-direction: column;
         overflow-y: hidden;
 	}
 	
 	.promo3 {
+        // lo aregue por un warning de main.css
+        grid-row: 5;
+        grid-column: 1;
+        // fin
 		grid-area: promo3;
 		flex-direction: column;
         overflow-y: hidden;
 	}
 	
 	.piePagina{
+        // lo aregue por un warning de main.css
+        grid-row: 5;
+        grid-column: 1;
+        // fin
 		grid-area: footer;
 		text-align: center;
 		font-family: 'Permanent Marker', cursive; /*letra extraida de google fonts*/
@@ -461,10 +541,18 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
     }
     
     .barraDer{
+        // lo aregue por un warning de main.css
+        grid-row: 1;
+        grid-column: 1;
+        // fin
         grid-area: contacto;
     }
 
     .encabezado{
+        // lo aregue por un warning de main.css
+        grid-row: 2;
+        grid-column: 1;
+        // fin
         grid-area: header;
         width: auto;
         line-height: normal;
@@ -472,11 +560,19 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
     }
 
     .barraNavegacion{
+        // lo aregue por un warning de main.css
+        grid-row: 3;
+        grid-column: 1;
+        // fin
         grid-area: nav;
         padding-left: 1em;
     }   
     
     .mainContainer {
+        // lo aregue por un warning de main.css
+        grid-row: 4;
+        grid-column: 1;
+        // fin
         grid-area: main;
         display: $grid;
         grid-template-columns: 100%;
@@ -491,12 +587,20 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
     }
     
     .tituloContenido {
+        // lo aregue por un warning de main.css
+        grid-row: 1;
+        grid-column: 1;
+        // fin
         grid-area: title;
         justify-content: center;
         height: 60px;
     }
     
     .promo {
+        // lo aregue por un warning de main.css
+        grid-row: 2;
+        grid-column: 1;
+        // fin
         grid-area: promo;
         overflow-y: hidden;
         font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
@@ -507,6 +611,10 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
     }
     
     .promo1 {
+        // lo aregue por un warning de main.css
+        grid-row: 3;
+        grid-column: 1;
+        // fin
         grid-area: promo1;
         overflow-y: hidden;
         font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
@@ -517,6 +625,10 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
     }
     
     .promo2 {
+        // lo aregue por un warning de main.css
+        grid-row: 4;
+        grid-column: 1;
+        // fin
         grid-area: promo2;
         overflow-y: hidden;
         font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
@@ -527,6 +639,10 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
     }
     
     .promo3 {
+        // lo aregue por un warning de main.css
+        grid-row: 5;
+        grid-column: 1;
+        // fin
         grid-area: promo3;
         overflow-y: hidden;
         font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
@@ -537,6 +653,10 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
     }
     
     .piePagina{
+        // lo aregue por un warning de main.css
+        grid-row: 5;
+        grid-column: 1;
+        // fin
         grid-area: footer;
         text-align: center;
         font-family: 'Permanent Marker', cursive; /*letra extraida de google fonts*/
@@ -559,12 +679,20 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
     }
 
     .barraDer{
+        // lo aregue por un warning de main.css
+        grid-row: 1;
+        grid-column: 1;
+        // fin
         grid-area: contacto;
         letter-spacing: 3px;
         font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     }
 
     .encabezado{
+        // lo aregue por un warning de main.css
+        grid-row: 2;
+        grid-column: 1;
+        // fin
         grid-area: header;
         width: auto;
         line-height: normal;
@@ -572,10 +700,18 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
     }
 
     .barraNavegacion{
+        // lo aregue por un warning de main.css
+        grid-row: 3;
+        grid-column: 1;
+        // fin
         grid-area: nav;
     }   
 
     .mainPaquete {
+        // lo aregue por un warning de main.css
+        grid-row: 4;
+        grid-column: 1;
+        // fin
         grid-area: main;
         display: $grid;
         grid-template-columns: 100%;
@@ -590,36 +726,60 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
     }
     
     .tituloContenido {
+        // lo aregue por un warning de main.css
+        grid-row: 1;
+        grid-column: 1;
+        // fin
         grid-area: title;
         justify-content: center;
         margin-top: 1em;
     }
     
     .promo {
+        // lo aregue por un warning de main.css
+        grid-row: 2;
+        grid-column: 1;
+        // fin
         grid-area: promo;
         flex-direction: column;
         overflow-y: hidden;
     }
     
     .promo1 {
+        // lo aregue por un warning de main.css
+        grid-row: 3;
+        grid-column: 1;
+        // fin
         grid-area: promo1;
         flex-direction: column;
         overflow-y: hidden;
     }
     
     .promo2 {
+        // lo aregue por un warning de main.css
+        grid-row: 4;
+        grid-column: 1;
+        // fin
         grid-area: promo2;
         flex-direction: column;
         overflow-y: hidden;
     }
     
     .promo3 {
+        // lo aregue por un warning de main.css
+        grid-row: 5;
+        grid-column: 1;
+        // fin
         grid-area: promo3;
         flex-direction: column;
         overflow-y: hidden;
     }
     
     .piePagina{
+        // lo aregue por un warning de main.css
+        grid-row: 5;
+        grid-column: 1;
+        // fin
         grid-area: footer;
         text-align: center;
         font-family: 'Permanent Marker', cursive; /*letra extraida de google fonts*/
@@ -777,8 +937,12 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
         "main main main main"
         "footer footer footer footer"; 
 		grid-template-rows: 20px 0.1fr 1fr 0.1fr; 
-		grid-template-columns: repeat(4, 1fr); 
+		grid-template-columns: 1fr 1fr 1fr 1fr; 
 		.barraDer{
+            // lo aregue por un warning de main.css
+            grid-row: 1;
+            grid-column: 1;
+            // fin
             grid-area: contacto;
             display: flex;
             flex-direction: row;
@@ -787,11 +951,19 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
         }
         
         .encabezado{
+            // lo aregue por un warning de main.css
+            grid-row: 2;
+            grid-column: 1;
+            // fin
             grid-area: encabezado;
             justify-content: flex-start;
         }
         
         .barraNavegacion{
+            // lo aregue por un warning de main.css
+            grid-row: 3;
+            grid-column: 1;
+            // fin
             grid-area: barraNavegacion;
             display: flex;
             flex-direction: row;
@@ -800,6 +972,10 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
         }
         
         .mainContainer {
+            // lo aregue por un warning de main.css
+            grid-row: 3;
+            grid-column: 1;
+            // fin
             grid-area: main;
             display: grid;
             grid-template-columns: 0.9fr 0.9fr 0.9fr 0.9fr;
@@ -812,11 +988,19 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
         }
         
         .tituloPromociones {
+            // lo aregue por un warning de main.css
+            grid-row: 1;
+            grid-column: 1;
+            // fin
             grid-area: title;
             padding: 10px 20px 20px 20px;
         }
         
         .promo {
+            // lo aregue por un warning de main.css
+            grid-row: 2;
+            grid-column: 1;
+            // fin
             grid-area: promo;
             display: flex;
             flex-direction: row;
@@ -829,6 +1013,10 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
         }
         
         .promo1 {
+            // lo aregue por un warning de main.css
+            grid-row: 2;
+            grid-column: 3;
+            // fin
             grid-area: promo1;
             display: flex;
             flex-direction: row;
@@ -839,6 +1027,10 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
         }
         
         .promo2 {
+            // lo aregue por un warning de main.css
+            grid-row: 3;
+            grid-column: 1;
+            // fin
             grid-area: promo2;
             display: flex;
             flex-direction: row;
@@ -851,6 +1043,10 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
         }
         
         .promo3 {
+            // lo aregue por un warning de main.css
+            grid-row: 3;
+            grid-column: 3;
+            // fin
             grid-area: promo3;
             display: flex;
             flex-direction: row;
@@ -862,6 +1058,10 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
         }
         
         .piePagina{
+            // lo aregue por un warning de main.css
+            grid-row: 4;
+            grid-column: 1;
+            // fin
             grid-area: footer;
             text-align: center;
             padding-top: 3px;
@@ -880,10 +1080,14 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
         "main main main main"
         "footer footer footer footer"; 
 		grid-template-rows: 20px 0.1fr 0.9fr 0.1fr; 
-		grid-template-columns: repeat(4, 1fr); 
+		grid-template-columns: 1fr 1fr 1fr 1fr; 
   	}
 	
 	.barraDer{
+        // lo aregue por un warning de main.css
+        grid-row: 1;
+        grid-column: 1;
+        // fin
 		grid-area: contacto;
 		display: flex;
 		flex-direction: row;
@@ -892,11 +1096,19 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
 	}
 	
 	.encabezado{
+        // lo aregue por un warning de main.css
+        grid-row: 2;
+        grid-column: 1;
+        // fin
 		grid-area: header;
 		display: flex-start;
 	}
 	
 	.barraNavegacion{
+        // lo aregue por un warning de main.css
+        grid-row: 2;
+        grid-column: 2;
+        // fin
 		grid-area: barraNavegacion;
 		display: flex;
 		justify-content: flex-start;
@@ -905,6 +1117,10 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
 	}
 	
 	.mainPaquete{
+        // lo aregue por un warning de main.css
+        grid-row: 3;
+        grid-column: 1;
+        // fin
 		grid-area: main;
 		display: grid;
 		grid-template-columns: 0.9fr 0.9fr 0.9fr 0.9fr;
@@ -917,11 +1133,19 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
 	}
 	
 	.tituloPromociones {
+        // lo aregue por un warning de main.css
+        grid-row: 1;
+        grid-column: 1;
+        // fin
 		grid-area: title;
         padding: 10px 20px 20px 20px;
 	}
 	
 	.promo {
+        // lo aregue por un warning de main.css
+        grid-row: 2;
+        grid-column: 1;
+        // fin
 		grid-area: promo;
 		display: flex;
 		flex-direction: row;
@@ -933,6 +1157,10 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
 	}
 	
 	.promo1 {
+        // lo aregue por un warning de main.css
+        grid-row: 2;
+        grid-column: 3;
+        // fin
 		grid-area: promo1;
 		display: flex;
 		flex-direction: row;
@@ -942,6 +1170,10 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
 	}
 	
 	.promo2 {
+        // lo aregue por un warning de main.css
+        grid-row: 3;
+        grid-column: 1;
+        // fin
 		grid-area: promo2;
 		display: flex;
 		flex-direction: row;
@@ -953,6 +1185,10 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
 	}
 	
 	.promo3 {
+        // lo aregue por un warning de main.css
+        grid-row: 3;
+        grid-column: 3;
+        // fin
 		grid-area: promo3;
 		display: flex;
 		flex-direction: row;
@@ -963,6 +1199,10 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
 	}
 
 	.piePagina{
+        // lo aregue por un warning de main.css
+        grid-row: 4;
+        grid-column: 1;
+        // fin
 		grid-area: footer;
 		text-align: center;
         padding-top: 6px;
