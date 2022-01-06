@@ -918,7 +918,7 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
     }
     
     .piePagina{
-        height: 70px;
+        height: 65px;
     }
 
     .encabezado{
@@ -1064,8 +1064,8 @@ $tituloMain: 'Zen Kurenaido', sans-serif;
             // fin
             grid-area: footer;
             text-align: center;
-            padding-top: 3px;
-            padding-bottom: 3px;
+            padding-top: 6px;
+            padding-bottom: 6px;
             font-family: $letraPrincipal;
             color: $colorLetra; 
         }

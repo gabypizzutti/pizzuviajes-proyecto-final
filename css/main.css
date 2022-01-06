@@ -1202,7 +1202,7 @@ body {
     line-height: 1.5em;
   }
   .piePagina {
-    height: 70px;
+    height: 65px;
   }
   .encabezado {
     width: 100%;
@@ -1386,8 +1386,8 @@ body {
     -ms-grid-column-span: 4;
     grid-area: footer;
     text-align: center;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     font-family: "Permanent Marker", cursive;
     color: white;
   }
